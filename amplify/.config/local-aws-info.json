@@ -1,0 +1,12 @@
+{
+  "devsecond": {
+    "configLevel": "project",
+    "useProfile": false,
+    "awsConfigFilePath": "/Users/bigstar/.amplify/awscloudformation/DRb8FQ4eLb"
+  },
+  "dev": {
+    "configLevel": "project",
+    "useProfile": false,
+    "awsConfigFilePath": "/Users/bigstar/.amplify/awscloudformation/9KnRDV6Kc9"
+  }
+}

@@ -1,0 +1,404 @@
+{
+	"providers": {
+		"awscloudformation": {
+			"AuthRoleName": "amplify-checkmenow-dev-162307-authRole",
+			"UnauthRoleArn": "arn:aws:iam::915218614881:role/amplify-checkmenow-dev-162307-unauthRole",
+			"AuthRoleArn": "arn:aws:iam::915218614881:role/amplify-checkmenow-dev-162307-authRole",
+			"Region": "eu-west-2",
+			"DeploymentBucketName": "amplify-checkmenow-dev-162307-deployment",
+			"UnauthRoleName": "amplify-checkmenow-dev-162307-unauthRole",
+			"StackName": "amplify-checkmenow-dev-162307",
+			"StackId": "arn:aws:cloudformation:eu-west-2:915218614881:stack/amplify-checkmenow-dev-162307/0dfd5780-8bf4-11eb-a057-0af0ce12f7d4",
+			"AmplifyAppId": "d20t6f9h1aman1"
+		}
+	},
+	"auth": {
+		"checkmenowAuth": {
+			"service": "Cognito",
+			"providerPlugin": "awscloudformation",
+			"dependsOn": [
+				{
+					"category": "function",
+					"resourceName": "checkmenowAuthPreAuthentication",
+					"triggerProvider": "Cognito",
+					"attributes": [
+						"Arn",
+						"Name"
+					]
+				},
+				{
+					"category": "function",
+					"resourceName": "checkmenowAuthPreSignup",
+					"triggerProvider": "Cognito",
+					"attributes": [
+						"Arn",
+						"Name"
+					]
+				}
+			],
+			"customAuth": false,
+			"output": {
+				"CreatedSNSRole": "arn:aws:iam::915218614881:role/snsundefined162307-dev",
+				"AppClientSecret": "6aa1hkh5mpbk9uvl5cu5u4gknanhma3soicnepm5q2gufiqjvc5",
+				"UserPoolId": "eu-west-2_YSsI8CiIR",
+				"AppClientIDWeb": "586s5ui98l82rq1b6a3uovi8qf",
+				"AppClientID": "3bs0u2tumo0bbhe714dt52o55v",
+				"IdentityPoolId": "eu-west-2:d99db4d4-b148-4ba9-b227-82fa5c839428",
+				"IdentityPoolName": "checkmenowIdentityPool__dev",
+				"UserPoolName": "checkmenowUserPool"
+			},
+			"lastPushTimeStamp": "2021-03-24T13:24:24.616Z",
+			"providerMetadata": {
+				"s3TemplateURL": "https://s3.amazonaws.com/amplify-checkmenow-dev-162307-deployment/amplify-cfn-templates/auth/checkmenowAuth-cloudformation-template.yml",
+				"logicalId": "authcheckmenowAuth"
+			}
+		}
+	},
+	"api": {
+		"checkmenowApi": {
+			"service": "AppSync",
+			"providerPlugin": "awscloudformation",
+			"output": {
+				"authConfig": {
+					"defaultAuthentication": {
+						"authenticationType": "AMAZON_COGNITO_USER_POOLS",
+						"userPoolConfig": {
+							"userPoolId": "authcheckmenowAuth"
+						}
+					},
+					"additionalAuthenticationProviders": [
+						{
+							"authenticationType": "API_KEY",
+							"apiKeyConfig": {
+								"apiKeyExpirationDays": 365,
+								"description": "Link patient lambda function access to API"
+							}
+						}
+					]
+				},
+				"GraphQLAPIIdOutput": "fnbiqgpnjnbl5dmmt2qomeqd2q",
+				"GraphQLAPIEndpointOutput": "https://yc53c2cn65gejajnlp3qcb4lgq.appsync-api.eu-west-2.amazonaws.com/graphql",
+				"GraphQLAPIKeyOutput": "da2-pz4lrvuw5nfwjdffwoaus52avu"
+			},
+			"lastPushTimeStamp": "2021-03-24T13:24:24.623Z",
+			"providerMetadata": {
+				"s3TemplateURL": "https://s3.amazonaws.com/amplify-checkmenow-dev-162307-deployment/amplify-cfn-templates/api/cloudformation-template.json",
+				"logicalId": "apicheckmenowApi"
+			}
+		}
+	},
+	"function": {
+		"S3Trigger7590264d": {
+			"build": true,
+			"providerPlugin": "awscloudformation",
+			"service": "Lambda",
+			"output": {
+				"Region": "eu-west-2",
+				"Arn": "arn:aws:lambda:eu-west-2:915218614881:function:S3Trigger7590264d-dev",
+				"Name": "S3Trigger7590264d-dev",
+				"LambdaExecutionRole": "S3Trigger7590264dLambdaRole7590264d-dev"
+			},
+			"lastPushTimeStamp": "2021-03-24T13:24:24.625Z",
+			"providerMetadata": {
+				"s3TemplateURL": "https://s3.amazonaws.com/amplify-checkmenow-dev-162307-deployment/amplify-cfn-templates/function/S3Trigger7590264d-cloudformation-template.json",
+				"logicalId": "functionS3Trigger7590264d"
+			},
+			"s3Bucket": {
+				"deploymentBucketName": "amplify-checkmenow-dev-162307-deployment",
+				"s3Key": "amplify-builds/S3Trigger7590264d-794676797a577a76326e-build.zip"
+			}
+		},
+		"checkIdentity": {
+			"build": true,
+			"providerPlugin": "awscloudformation",
+			"service": "Lambda",
+			"dependsOn": [
+				{
+					"category": "storage",
+					"resourceName": "checkmenowBuckets",
+					"attributes": [
+						"BucketName"
+					]
+				}
+			],
+			"output": {
+				"Region": "eu-west-2",
+				"Arn": "arn:aws:lambda:eu-west-2:915218614881:function:checkIdentity-dev",
+				"Name": "checkIdentity-dev",
+				"LambdaExecutionRole": "checkmenowLambdaRolea109f7e4-dev"
+			},
+			"lastPushTimeStamp": "2021-03-24T13:24:24.627Z",
+			"providerMetadata": {
+				"s3TemplateURL": "https://s3.amazonaws.com/amplify-checkmenow-dev-162307-deployment/amplify-cfn-templates/function/checkIdentity-cloudformation-template.json",
+				"logicalId": "functioncheckIdentity"
+			},
+			"s3Bucket": {
+				"deploymentBucketName": "amplify-checkmenow-dev-162307-deployment",
+				"s3Key": "amplify-builds/checkIdentity-703937715738416c3535-build.zip"
+			}
+		},
+		"getGPList": {
+			"build": true,
+			"providerPlugin": "awscloudformation",
+			"service": "Lambda",
+			"output": {
+				"Region": "eu-west-2",
+				"Arn": "arn:aws:lambda:eu-west-2:915218614881:function:getGPList-dev",
+				"Name": "getGPList-dev",
+				"LambdaExecutionRole": "checkmenowLambdaRole6d3bd65c-dev"
+			},
+			"lastPushTimeStamp": "2021-03-24T13:24:24.629Z",
+			"providerMetadata": {
+				"s3TemplateURL": "https://s3.amazonaws.com/amplify-checkmenow-dev-162307-deployment/amplify-cfn-templates/function/getGPList-cloudformation-template.json",
+				"logicalId": "functiongetGPList"
+			},
+			"s3Bucket": {
+				"deploymentBucketName": "amplify-checkmenow-dev-162307-deployment",
+				"s3Key": "amplify-builds/getGPList-735a4566486c6a77384b-build.zip"
+			}
+		},
+		"chatNext": {
+			"build": true,
+			"providerPlugin": "awscloudformation",
+			"service": "Lambda",
+			"output": {
+				"Region": "eu-west-2",
+				"Arn": "arn:aws:lambda:eu-west-2:915218614881:function:chatNext-dev",
+				"Name": "chatNext-dev",
+				"LambdaExecutionRole": "checkmenowLambdaRole523d9d92-dev"
+			},
+			"lastPushTimeStamp": "2021-03-24T13:24:24.653Z",
+			"providerMetadata": {
+				"s3TemplateURL": "https://s3.amazonaws.com/amplify-checkmenow-dev-162307-deployment/amplify-cfn-templates/function/chatNext-cloudformation-template.json",
+				"logicalId": "functionchatNext"
+			},
+			"lastBuildTimeStamp": "2021-03-24T13:22:29.671Z",
+			"lastPackageTimeStamp": "2021-03-24T13:22:37.637Z",
+			"distZipFilename": "chatNext-6c7a6235565877623347-build.zip",
+			"s3Bucket": {
+				"deploymentBucketName": "amplify-checkmenow-dev-162307-deployment",
+				"s3Key": "amplify-builds/chatNext-6c7a6235565877623347-build.zip"
+			},
+			"lastPushDirHash": "BbaS5ryOJS6DNiilhNn5EWzJ7hc="
+		},
+		"userStatusTrigger": {
+			"build": true,
+			"providerPlugin": "awscloudformation",
+			"service": "Lambda",
+			"dependsOn": [
+				{
+					"category": "api",
+					"resourceName": "checkmenowApi",
+					"attributes": [
+						"GraphQLAPIIdOutput",
+						"GraphQLAPIEndpointOutput",
+						"GraphQLAPIKeyOutput"
+					]
+				}
+			],
+			"output": {
+				"Region": "eu-west-2",
+				"Arn": "arn:aws:lambda:eu-west-2:915218614881:function:userStatusTrigger-dev",
+				"Name": "userStatusTrigger-dev",
+				"LambdaExecutionRole": "checkmenowLambdaRolee99565ac-dev"
+			},
+			"lastPushTimeStamp": "2021-03-24T13:24:24.653Z",
+			"providerMetadata": {
+				"s3TemplateURL": "https://s3.amazonaws.com/amplify-checkmenow-dev-162307-deployment/amplify-cfn-templates/function/userStatusTrigger-cloudformation-template.json",
+				"logicalId": "functionuserStatusTrigger"
+			},
+			"lastBuildTimeStamp": "2021-03-24T13:22:29.675Z",
+			"lastPackageTimeStamp": "2021-03-24T13:22:32.499Z",
+			"distZipFilename": "userStatusTrigger-45725053743843566470-build.zip",
+			"s3Bucket": {
+				"deploymentBucketName": "amplify-checkmenow-dev-162307-deployment",
+				"s3Key": "amplify-builds/userStatusTrigger-45725053743843566470-build.zip"
+			},
+			"lastPushDirHash": "Ad/SXzku/HtLQJ07U09BCD3uYfM="
+		},
+		"moveUserLifecycle": {
+			"build": true,
+			"providerPlugin": "awscloudformation",
+			"service": "Lambda",
+			"dependsOn": [
+				{
+					"category": "api",
+					"resourceName": "checkmenowApi",
+					"attributes": [
+						"GraphQLAPIIdOutput",
+						"GraphQLAPIEndpointOutput",
+						"GraphQLAPIKeyOutput"
+					]
+				}
+			],
+			"output": {
+				"Region": "eu-west-2",
+				"CloudWatchEventRule": "amplify-checkmenow-dev-162307-func-CloudWatchEvent-LPXNMHB2QM9M",
+				"Arn": "arn:aws:lambda:eu-west-2:915218614881:function:moveUserLifecycle-dev",
+				"Name": "moveUserLifecycle-dev",
+				"LambdaExecutionRole": "checkmenowLambdaRolea127c407-dev"
+			},
+			"lastPushTimeStamp": "2021-03-24T13:24:24.636Z",
+			"providerMetadata": {
+				"s3TemplateURL": "https://s3.amazonaws.com/amplify-checkmenow-dev-162307-deployment/amplify-cfn-templates/function/moveUserLifecycle-cloudformation-template.json",
+				"logicalId": "functionmoveUserLifecycle"
+			},
+			"s3Bucket": {
+				"deploymentBucketName": "amplify-checkmenow-dev-162307-deployment",
+				"s3Key": "amplify-builds/moveUserLifecycle-434b54343058542b6e48-build.zip"
+			}
+		},
+		"cmnLinkUserToPatient": {
+			"build": true,
+			"providerPlugin": "awscloudformation",
+			"service": "Lambda",
+			"dependsOn": [
+				{
+					"category": "api",
+					"resourceName": "checkmenowApi",
+					"attributes": [
+						"GraphQLAPIIdOutput",
+						"GraphQLAPIEndpointOutput",
+						"GraphQLAPIKeyOutput"
+					]
+				}
+			],
+			"output": {
+				"Region": "eu-west-2",
+				"Arn": "arn:aws:lambda:eu-west-2:915218614881:function:cmnLinkUserToPatient-dev",
+				"Name": "cmnLinkUserToPatient-dev",
+				"LambdaExecutionRole": "checkmenowLambdaRole63539c76-dev"
+			},
+			"lastPushTimeStamp": "2021-03-24T13:24:24.653Z",
+			"providerMetadata": {
+				"s3TemplateURL": "https://s3.amazonaws.com/amplify-checkmenow-dev-162307-deployment/amplify-cfn-templates/function/cmnLinkUserToPatient-cloudformation-template.json",
+				"logicalId": "functioncmnLinkUserToPatient"
+			},
+			"lastBuildTimeStamp": "2021-03-24T13:22:29.677Z",
+			"lastPackageTimeStamp": "2021-03-24T13:22:33.561Z",
+			"distZipFilename": "cmnLinkUserToPatient-68474d2b442f76462b71-build.zip",
+			"s3Bucket": {
+				"deploymentBucketName": "amplify-checkmenow-dev-162307-deployment",
+				"s3Key": "amplify-builds/cmnLinkUserToPatient-68474d2b442f76462b71-build.zip"
+			},
+			"lastPushDirHash": "D9R5l4Sa6jcHS9pyUOLW5xhT4pk="
+		},
+		"checkmenowAuthPreAuthentication": {
+			"build": true,
+			"providerPlugin": "awscloudformation",
+			"service": "Lambda",
+			"output": {
+				"Region": "eu-west-2",
+				"Arn": "arn:aws:lambda:eu-west-2:915218614881:function:checkmenowAuthPreAuthentication-dev",
+				"Name": "checkmenowAuthPreAuthentication-dev",
+				"LambdaExecutionRole": "checkmenowAuthPreAuthentication-dev"
+			},
+			"lastPushTimeStamp": "2021-03-24T13:24:24.641Z",
+			"providerMetadata": {
+				"s3TemplateURL": "https://s3.amazonaws.com/amplify-checkmenow-dev-162307-deployment/amplify-cfn-templates/function/checkmenowAuthPreAuthentication-cloudformation-template.json",
+				"logicalId": "functioncheckmenowAuthPreAuthentication"
+			},
+			"s3Bucket": {
+				"deploymentBucketName": "amplify-checkmenow-dev-162307-deployment",
+				"s3Key": "amplify-builds/checkmenowAuthPreAuthentication-55723241312f496e6a6d-build.zip"
+			}
+		},
+		"checkmenowAuthPreSignup": {
+			"build": true,
+			"providerPlugin": "awscloudformation",
+			"service": "Lambda",
+			"output": {
+				"Region": "eu-west-2",
+				"Arn": "arn:aws:lambda:eu-west-2:915218614881:function:checkmenowAuthPreSignup-dev",
+				"Name": "checkmenowAuthPreSignup-dev",
+				"LambdaExecutionRole": "checkmenowAuthPreSignup-dev"
+			},
+			"lastPushTimeStamp": "2021-03-24T13:24:24.643Z",
+			"providerMetadata": {
+				"s3TemplateURL": "https://s3.amazonaws.com/amplify-checkmenow-dev-162307-deployment/amplify-cfn-templates/function/checkmenowAuthPreSignup-cloudformation-template.json",
+				"logicalId": "functioncheckmenowAuthPreSignup"
+			},
+			"s3Bucket": {
+				"deploymentBucketName": "amplify-checkmenow-dev-162307-deployment",
+				"s3Key": "amplify-builds/checkmenowAuthPreSignup-31337a436559692b794b-build.zip"
+			}
+		}
+	},
+	"storage": {
+		"checkmenowBuckets": {
+			"service": "S3",
+			"providerPlugin": "awscloudformation",
+			"dependsOn": [
+				{
+					"category": "function",
+					"resourceName": "S3Trigger7590264d",
+					"attributes": [
+						"Name",
+						"Arn",
+						"LambdaExecutionRole"
+					]
+				}
+			],
+			"output": {
+				"BucketName": "checkmenow162307-dev",
+				"Region": "eu-west-2"
+			},
+			"lastPushTimeStamp": "2021-03-24T13:24:24.645Z",
+			"providerMetadata": {
+				"s3TemplateURL": "https://s3.amazonaws.com/amplify-checkmenow-dev-162307-deployment/amplify-cfn-templates/storage/s3-cloudformation-template.json",
+				"logicalId": "storagecheckmenowBuckets"
+			}
+		}
+	},
+	"analytics": {
+		"checkmenowAnalytics": {
+			"service": "Pinpoint",
+			"providerPlugin": "awscloudformation",
+			"output": {
+				"appName": "checkmenowAnalytics-dev",
+				"Region": "eu-west-1",
+				"Id": "ced2590e1b084482ac71454d4391d730"
+			},
+			"lastPushTimeStamp": "2021-03-24T13:24:24.647Z",
+			"providerMetadata": {
+				"s3TemplateURL": "https://s3.amazonaws.com/amplify-checkmenow-dev-162307-deployment/amplify-cfn-templates/analytics/pinpoint-cloudformation-template.json",
+				"logicalId": "analyticscheckmenowAnalytics"
+			}
+		}
+	},
+	"notifications": {
+		"checkmenowAnalytics": {
+			"service": "Pinpoint",
+			"output": {
+				"Name": "checkmenowAnalytics-dev",
+				"Id": "c181c3b5a4064e9c8b2df5526221f23b",
+				"Region": "eu-west-1",
+				"APNS": {
+					"ApplicationId": "c181c3b5a4064e9c8b2df5526221f23b",
+					"CreationDate": "2021-03-23T17:03:32.946Z",
+					"DefaultAuthenticationMethod": "Key",
+					"Enabled": true,
+					"HasCredential": false,
+					"HasTokenKey": true,
+					"Id": "apns",
+					"IsArchived": false,
+					"LastModifiedDate": "2021-03-23T17:03:32.946Z",
+					"Platform": "APNS",
+					"Version": 1
+				},
+				"FCM": {
+					"ApplicationId": "c181c3b5a4064e9c8b2df5526221f23b",
+					"CreationDate": "2021-03-23T17:03:43.365Z",
+					"Enabled": true,
+					"HasCredential": true,
+					"Id": "gcm",
+					"IsArchived": false,
+					"LastModifiedDate": "2021-03-23T17:03:43.365Z",
+					"Platform": "GCM",
+					"Version": 1
+				}
+			},
+			"lastPushTimeStamp": "2021-03-24T16:15:44.997Z"
+		}
+	}
+}

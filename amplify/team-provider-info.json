@@ -1,0 +1,294 @@
+{
+  "devsecond": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-checkmenow-devsecond-94952-authRole",
+      "UnauthRoleArn": "arn:aws:iam::915218614881:role/amplify-checkmenow-devsecond-94952-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::915218614881:role/amplify-checkmenow-devsecond-94952-authRole",
+      "Region": "eu-west-2",
+      "DeploymentBucketName": "amplify-checkmenow-devsecond-94952-deployment",
+      "UnauthRoleName": "amplify-checkmenow-devsecond-94952-unauthRole",
+      "StackName": "amplify-checkmenow-devsecond-94952",
+      "StackId": "arn:aws:cloudformation:eu-west-2:915218614881:stack/amplify-checkmenow-devsecond-94952/f5378bb0-863c-11eb-99b5-0a2473f1da60",
+      "AmplifyAppId": "d20t6f9h1aman1"
+    },
+    "categories": {
+      "notifications": {
+        "Pinpoint": {
+          "Name": "checkmenowAnalytics-devsecond",
+          "Id": "9f605b7d68fe4140bf036b0160640412",
+          "Region": "eu-west-1"
+        }
+      },
+      "auth": {
+        "checkmenowAuth": {}
+      },
+      "function": {
+        "S3Trigger7590264d": {
+          "deploymentBucketName": "amplify-checkmenow-devsecond-94952-deployment",
+          "s3Key": "amplify-builds/S3Trigger7590264d-794676797a577a76326e-build.zip"
+        },
+        "checkIdentity": {
+          "deploymentBucketName": "amplify-checkmenow-devsecond-94952-deployment",
+          "s3Key": "amplify-builds/checkIdentity-703937715738416c3535-build.zip"
+        },
+        "getGPList": {
+          "deploymentBucketName": "amplify-checkmenow-devsecond-94952-deployment",
+          "s3Key": "amplify-builds/getGPList-735a4566486c6a77384b-build.zip"
+        },
+        "chatNext": {
+          "deploymentBucketName": "amplify-checkmenow-devsecond-94952-deployment",
+          "s3Key": "amplify-builds/chatNext-6b37642b6e6747663444-build.zip"
+        },
+        "userStatusTrigger": {
+          "deploymentBucketName": "amplify-checkmenow-devsecond-94952-deployment",
+          "s3Key": "amplify-builds/userStatusTrigger-7950387a52376e4b7166-build.zip"
+        },
+        "moveUserLifecycle": {
+          "deploymentBucketName": "amplify-checkmenow-devsecond-94952-deployment",
+          "s3Key": "amplify-builds/moveUserLifecycle-434b54343058542b6e48-build.zip"
+        },
+        "cmnLinkUserToPatient": {
+          "deploymentBucketName": "amplify-checkmenow-devsecond-94952-deployment",
+          "s3Key": "amplify-builds/cmnLinkUserToPatient-6a6b7a556364344f4246-build.zip"
+        },
+        "checkmenowAuthPreAuthentication": {
+          "deploymentBucketName": "amplify-checkmenow-devsecond-94952-deployment",
+          "s3Key": "amplify-builds/checkmenowAuthPreAuthentication-526e7262546675384d6c-build.zip"
+        },
+        "checkmenowAuthPreSignup": {
+          "deploymentBucketName": "amplify-checkmenow-devsecond-94952-deployment",
+          "s3Key": "amplify-builds/checkmenowAuthPreSignup-31337a436559692b794b-build.zip"
+        },
+        "issueCertificate": {
+          "deploymentBucketName": "amplify-checkmenow-devsecond-94952-deployment",
+          "s3Key": "amplify-builds/issueCertificate-617a6c5a39634d703851-build.zip",
+          "kmsSignCertificateKeyId": "9c1a8b91-7a35-47ef-a7db-0474db6f6d3e"
+        },
+        "getVaccineDetails": {
+          "deploymentBucketName": "amplify-checkmenow-devsecond-94952-deployment",
+          "s3Key": "amplify-builds/getVaccineDetails-6142576461354e646a64-build.zip"
+        },
+        "generateCertificatePassKitIOS": {
+          "deploymentBucketName": "amplify-checkmenow-devsecond-94952-deployment",
+          "s3Key": "amplify-builds/generateCertificatePassKitIOS-686d71312f7541327a32-build.zip"
+        }
+      }
+    }
+  },
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-checkmenow-dev-162307-authRole",
+      "UnauthRoleArn": "arn:aws:iam::915218614881:role/amplify-checkmenow-dev-162307-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::915218614881:role/amplify-checkmenow-dev-162307-authRole",
+      "Region": "eu-west-2",
+      "DeploymentBucketName": "amplify-checkmenow-dev-162307-deployment",
+      "UnauthRoleName": "amplify-checkmenow-dev-162307-unauthRole",
+      "StackName": "amplify-checkmenow-dev-162307",
+      "StackId": "arn:aws:cloudformation:eu-west-2:915218614881:stack/amplify-checkmenow-dev-162307/0dfd5780-8bf4-11eb-a057-0af0ce12f7d4",
+      "AmplifyAppId": "d20t6f9h1aman1"
+    },
+    "categories": {
+      "notifications": {
+        "Pinpoint": {
+          "Name": "checkmenowAnalytics-dev",
+          "Id": "c181c3b5a4064e9c8b2df5526221f23b",
+          "Region": "eu-west-1"
+        }
+      },
+      "auth": {
+        "checkmenowAuth": {}
+      },
+      "function": {
+        "S3Trigger7590264d": {
+          "deploymentBucketName": "amplify-checkmenow-dev-162307-deployment",
+          "s3Key": "amplify-builds/S3Trigger7590264d-794676797a577a76326e-build.zip"
+        },
+        "checkIdentity": {
+          "deploymentBucketName": "amplify-checkmenow-dev-162307-deployment",
+          "s3Key": "amplify-builds/checkIdentity-703937715738416c3535-build.zip"
+        },
+        "getGPList": {
+          "deploymentBucketName": "amplify-checkmenow-dev-162307-deployment",
+          "s3Key": "amplify-builds/getGPList-735a4566486c6a77384b-build.zip"
+        },
+        "chatNext": {
+          "deploymentBucketName": "amplify-checkmenow-dev-162307-deployment",
+          "s3Key": "amplify-builds/chatNext-7a5a543164435a337945-build.zip"
+        },
+        "moveUserLifecycle": {
+          "deploymentBucketName": "amplify-checkmenow-dev-162307-deployment",
+          "s3Key": "amplify-builds/moveUserLifecycle-434b54343058542b6e48-build.zip"
+        },
+        "cmnLinkUserToPatient": {
+          "deploymentBucketName": "amplify-checkmenow-dev-162307-deployment",
+          "s3Key": "amplify-builds/cmnLinkUserToPatient-6a6b7a556364344f4246-build.zip"
+        },
+        "checkmenowAuthPreAuthentication": {
+          "deploymentBucketName": "amplify-checkmenow-dev-162307-deployment",
+          "s3Key": "amplify-builds/checkmenowAuthPreAuthentication-526e7262546675384d6c-build.zip"
+        },
+        "checkmenowAuthPreSignup": {
+          "deploymentBucketName": "amplify-checkmenow-dev-162307-deployment",
+          "s3Key": "amplify-builds/checkmenowAuthPreSignup-31337a436559692b794b-build.zip"
+        },
+        "issueCertificate": {
+          "deploymentBucketName": "amplify-checkmenow-dev-162307-deployment",
+          "s3Key": "amplify-builds/issueCertificate-792b58765a3873584e34-build.zip",
+          "kmsSignCertificateKeyId": "9c1a8b91-7a35-47ef-a7db-0474db6f6d3e"
+        },
+        "getVaccineDetails": {
+          "deploymentBucketName": "amplify-checkmenow-dev-162307-deployment",
+          "s3Key": "amplify-builds/getVaccineDetails-32464747432f794c4830-build.zip"
+        },
+        "generateCertificatePassKitIOS": {
+          "deploymentBucketName": "amplify-checkmenow-dev-162307-deployment",
+          "s3Key": "amplify-builds/generateCertificatePassKitIOS-4d4879584e7850763530-build.zip"
+        }
+      }
+    }
+  },
+  "test": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-checkmenow-test-190905-authRole",
+      "UnauthRoleArn": "arn:aws:iam::915218614881:role/amplify-checkmenow-test-190905-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::915218614881:role/amplify-checkmenow-test-190905-authRole",
+      "Region": "eu-west-2",
+      "DeploymentBucketName": "amplify-checkmenow-test-190905-deployment",
+      "UnauthRoleName": "amplify-checkmenow-test-190905-unauthRole",
+      "StackName": "amplify-checkmenow-test-190905",
+      "StackId": "arn:aws:cloudformation:eu-west-2:915218614881:stack/amplify-checkmenow-test-190905/3d34a000-8c0b-11eb-9349-0aad3f630dbc",
+      "AmplifyAppId": "d20t6f9h1aman1"
+    },
+    "categories": {
+      "auth": {
+        "checkmenowAuth": {}
+      },
+      "notifications": {
+        "Pinpoint": {
+          "Name": "checkmenowAnalytics-test",
+          "Id": "bbbcc8479fa84bf3b308f782b81973d1",
+          "Region": "eu-west-1"
+        }
+      },
+      "function": {
+        "S3Trigger7590264d": {
+          "deploymentBucketName": "amplify-checkmenow-test-190905-deployment",
+          "s3Key": "amplify-builds/S3Trigger7590264d-794676797a577a76326e-build.zip"
+        },
+        "checkIdentity": {
+          "deploymentBucketName": "amplify-checkmenow-test-190905-deployment",
+          "s3Key": "amplify-builds/checkIdentity-703937715738416c3535-build.zip"
+        },
+        "getGPList": {
+          "deploymentBucketName": "amplify-checkmenow-test-190905-deployment",
+          "s3Key": "amplify-builds/getGPList-735a4566486c6a77384b-build.zip"
+        },
+        "chatNext": {
+          "deploymentBucketName": "amplify-checkmenow-test-190905-deployment",
+          "s3Key": "amplify-builds/chatNext-7a5a543164435a337945-build.zip"
+        },
+        "moveUserLifecycle": {
+          "deploymentBucketName": "amplify-checkmenow-test-190905-deployment",
+          "s3Key": "amplify-builds/moveUserLifecycle-434b54343058542b6e48-build.zip"
+        },
+        "cmnLinkUserToPatient": {
+          "deploymentBucketName": "amplify-checkmenow-test-190905-deployment",
+          "s3Key": "amplify-builds/cmnLinkUserToPatient-6a6b7a556364344f4246-build.zip"
+        },
+        "checkmenowAuthPreAuthentication": {
+          "deploymentBucketName": "amplify-checkmenow-test-190905-deployment",
+          "s3Key": "amplify-builds/checkmenowAuthPreAuthentication-526e7262546675384d6c-build.zip"
+        },
+        "checkmenowAuthPreSignup": {
+          "deploymentBucketName": "amplify-checkmenow-test-190905-deployment",
+          "s3Key": "amplify-builds/checkmenowAuthPreSignup-31337a436559692b794b-build.zip"
+        },
+        "issueCertificate": {
+          "deploymentBucketName": "amplify-checkmenow-test-190905-deployment",
+          "s3Key": "amplify-builds/issueCertificate-792b58765a3873584e34-build.zip",
+          "kmsSignCertificateKeyId": "5f30fd81-a49e-420d-8dfa-fc304e463e85"
+        },
+        "getVaccineDetails": {
+          "deploymentBucketName": "amplify-checkmenow-test-190905-deployment",
+          "s3Key": "amplify-builds/getVaccineDetails-32464747432f794c4830-build.zip"
+        },
+        "generateCertificatePassKitIOS": {
+          "deploymentBucketName": "amplify-checkmenow-test-190905-deployment",
+          "s3Key": "amplify-builds/generateCertificatePassKitIOS-686d71312f7541327a32-build.zip"
+        }
+      }
+    }
+  },
+  "testsecond": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-checkmenow-testsecond-194925-authRole",
+      "UnauthRoleArn": "arn:aws:iam::915218614881:role/amplify-checkmenow-testsecond-194925-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::915218614881:role/amplify-checkmenow-testsecond-194925-authRole",
+      "Region": "eu-west-2",
+      "DeploymentBucketName": "amplify-checkmenow-testsecond-194925-deployment",
+      "UnauthRoleName": "amplify-checkmenow-testsecond-194925-unauthRole",
+      "StackName": "amplify-checkmenow-testsecond-194925",
+      "StackId": "arn:aws:cloudformation:eu-west-2:915218614881:stack/amplify-checkmenow-testsecond-194925/dfe786f0-8c10-11eb-b3b0-0a57c2d699a0",
+      "AmplifyAppId": "d20t6f9h1aman1"
+    },
+    "categories": {
+      "auth": {
+        "checkmenowAuth": {}
+      },
+      "notifications": {
+        "Pinpoint": {
+          "Name": "checkmenowAnalytics-testsecond",
+          "Id": "c9466ac4a6924020bbe745c2bc492c69",
+          "Region": "eu-west-1"
+        }
+      },
+      "function": {
+        "S3Trigger7590264d": {
+          "deploymentBucketName": "amplify-checkmenow-testsecond-194925-deployment",
+          "s3Key": "amplify-builds/S3Trigger7590264d-794676797a577a76326e-build.zip"
+        },
+        "checkIdentity": {
+          "deploymentBucketName": "amplify-checkmenow-testsecond-194925-deployment",
+          "s3Key": "amplify-builds/checkIdentity-703937715738416c3535-build.zip"
+        },
+        "getGPList": {
+          "deploymentBucketName": "amplify-checkmenow-testsecond-194925-deployment",
+          "s3Key": "amplify-builds/getGPList-735a4566486c6a77384b-build.zip"
+        },
+        "chatNext": {
+          "deploymentBucketName": "amplify-checkmenow-testsecond-194925-deployment",
+          "s3Key": "amplify-builds/chatNext-7a5a543164435a337945-build.zip"
+        },
+        "moveUserLifecycle": {
+          "deploymentBucketName": "amplify-checkmenow-testsecond-194925-deployment",
+          "s3Key": "amplify-builds/moveUserLifecycle-434b54343058542b6e48-build.zip"
+        },
+        "cmnLinkUserToPatient": {
+          "deploymentBucketName": "amplify-checkmenow-testsecond-194925-deployment",
+          "s3Key": "amplify-builds/cmnLinkUserToPatient-6a6b7a556364344f4246-build.zip"
+        },
+        "checkmenowAuthPreAuthentication": {
+          "deploymentBucketName": "amplify-checkmenow-testsecond-194925-deployment",
+          "s3Key": "amplify-builds/checkmenowAuthPreAuthentication-526e7262546675384d6c-build.zip"
+        },
+        "checkmenowAuthPreSignup": {
+          "deploymentBucketName": "amplify-checkmenow-testsecond-194925-deployment",
+          "s3Key": "amplify-builds/checkmenowAuthPreSignup-31337a436559692b794b-build.zip"
+        },
+        "getVaccineDetails": {
+          "deploymentBucketName": "amplify-checkmenow-testsecond-194925-deployment",
+          "s3Key": "amplify-builds/getVaccineDetails-32464747432f794c4830-build.zip"
+        },
+        "generateCertificatePassKitIOS": {
+          "deploymentBucketName": "amplify-checkmenow-testsecond-194925-deployment",
+          "s3Key": "amplify-builds/generateCertificatePassKitIOS-686d71312f7541327a32-build.zip"
+        },
+        "issueCertificate": {
+          "deploymentBucketName": "amplify-checkmenow-testsecond-194925-deployment",
+          "s3Key": "amplify-builds/issueCertificate-49614d7757647139344c-build.zip",
+          "kmsSignCertificateKeyId": "9c1a8b91-7a35-47ef-a7db-0474db6f6d3e"
+        }
+      }
+    }
+  }
+}

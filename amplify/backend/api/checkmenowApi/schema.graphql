@@ -1,0 +1,282 @@
+type UserDetails
+  @model(subscriptions: null)
+  @versioned
+  @key(name: "byEmail", fields: ["email"], queryField: "userDetailsByEmail")
+  @key(name: "byUserStatus", fields: ["userStatus","statusChangedAt"], queryField: "userDetailsByUserStatus")
+  @auth(rules: [{allow: owner}, {allow: public, provider: apiKey}]) {
+  id: ID!
+  firstName: String
+  lastName: String
+  email: String!
+  dateOfBirth: AWSDateTime
+  vaccinationDate: AWSDateTime
+  vaccinationCenter: String
+  isQrCodeReady: Boolean  
+  patientId: String 
+  herAccessGranted: Boolean
+  vaccineName: String
+  postCode: String
+  typeOfDocument: String
+  nationality: String
+  userStatus: UserStatus
+  statusChangedAt: Int
+  chatState: String
+  lastChatDate: AWSDateTime
+  pushNotificationToken: String
+  pushNotificationService: String
+  sideEffects: [SideEffect]
+  sideEffectsDialogState : SideEffectDialogState
+  isSideEffectScenarioCompleted : Boolean 
+  isLinkageKeySent: Boolean
+  isTester: Boolean
+  certificate: Certificate
+  vaccineDetails: [VaccineDetails]
+  consents: [Consent]
+}
+
+type CertificateHash 
+  @model(subscriptions: null)
+  @key(fields: ["certificateHash"]) 
+  @auth(rules: [{allow: owner}, {allow: public, provider: apiKey}]){
+  certificateHash: String!
+  userId: String!
+}
+
+type Consent{
+ status: ConsentStatus
+ description: String
+}
+
+enum ConsentStatus {
+  YES,
+  NO
+}
+
+type VaccineDetails{
+ doseDate: String
+ details: String
+}
+
+enum CertificateStatus {
+  DRAFT,
+  ACTIVE,
+  EXPIRED
+}
+
+type Certificate {
+  name: String
+  dateOfBirth: String
+  vaccineName: String
+  diseaseAgent: String
+  firstDoseDate: String
+  secondDoseDate: String
+  validFrom: String
+  expirationDate: String
+  country: String
+  issuer: String
+  identifier: String
+  state: CertificateStatus
+  messageHash: String
+  signature: String
+}
+
+type SideEffectDialogState {
+  inputText: String
+  intentName: String
+  outputText: String
+  modelField: String
+  action: String
+  restart: Boolean
+  transitions: [Transition]  
+}
+
+type Transition { 
+  input: String
+  next: String
+}
+
+type SideEffect {
+  createdAt: AWSDateTime
+  outputText: String
+  user: String
+} 
+
+type SideEffects
+  @model(subscriptions: null)
+  @versioned
+  @key(name: "byEmail", fields: ["email", "dateTime"], queryField: "sideEffectsByEmail")
+  @auth(rules: [{ allow: private}]) {
+  id: ID!
+  email: String!
+  symptomType: String!
+  dateTime: AWSDateTime!
+  symptomDetails: String
+  degreeType: String
+  degreeTypeDetails: String
+  symptomTime: String
+  symptomProgress: String
+  symptomProgressDetails: String
+  moreDetails: String
+  isCompleted: Boolean
+}
+   
+enum UserStatus {
+  UNVERIFIED
+  NO_NHS_LINKAGE
+  NO_EHR_ACCESS
+  INITIAL
+  SECOND_DOSE
+  AWAITING_VACCINATION
+  FIRST_DOSE_CONFIRMED
+  VACCINATION_CONFIRMED
+  IMMUNITY_CONFIRMED
+}
+
+enum Operation {
+  START
+  CHECK
+}
+
+input TransitionInput {
+  input: String
+  next: String
+}
+
+input ChatNextInput {
+  inputText: String!
+  outputText: String
+  intentName: String
+  transitions: [TransitionInput]
+  action: String
+  modelField: String
+  restart: Boolean 
+}
+
+type TransitionOutput {
+  input: String
+  next: String
+}
+
+type ChatNextOutput {
+  inputText: String
+  outputText: String
+  intentName: String
+  transitions: [TransitionOutput]
+  action: String
+  modelField: String
+  restart: Boolean 
+}
+
+input IdentityCheckInput {
+  operation: Operation
+  firstName: String
+  lastName: String
+  dateOfBirth: String
+  typeOfDocument: String
+  postCode: String
+  jobId: String
+}
+
+type Surgery {
+  Name: String
+  Details: String
+  Link: String
+}
+
+type GPList {
+  StatusCode: Int
+  Result: [Surgery]
+}
+
+input LinkUserToPatientInput {
+  userId: String!
+  linkageKey: String!
+  accountID: String!
+  surname: String!
+  gpOdsCode: String!
+  dateOfBirth: String!
+}
+
+type LinkUserToPatientOutput{
+  statusCode: Int
+  patientId: String
+  herAccessGranted: Boolean,
+  userStatus: String,
+  vaccineName: String,
+  error: String
+}
+
+type CertificateOutput{
+  statusCode: String
+  messageHash: String
+  signature: String
+  identifier: String
+  type: String
+  version: String
+  error: String
+}
+
+input IssueCertificateInput {
+  userId: String
+  name: String
+  dateOfBirth: String
+  vaccineName: String
+  diseaseAgent: String
+  firstDoseDate: String
+  secondDoseDate: String
+  validFrom: String
+  expirationDate: String
+  country: String
+  issuer: String
+}
+
+type VaccineDetailsOutput{
+  statusCode: String
+  userStatus: String
+  vaccineDetails: [VaccineDetails]
+  vaccineName: String
+  error: String
+}
+
+input PassKitIOSInput {
+  barcode: String,
+  fullName: String,
+  dateOfBirth: String,
+  certificateIdentifier: String,
+  vaccineName: String,
+  diseaseAgent: String,
+  validFrom: String,
+  expirationDate: String
+}
+
+type Query {
+  checkIdentity(identityCheckInput: IdentityCheckInput): String
+    @function(name: "checkIdentity-${env}")
+
+  gpList(postCode: String): GPList @function(name: "getGPList-${env}")
+
+  chatNext(chatNextInput: ChatNextInput): ChatNextOutput
+    @function(name: "chatNext-${env}")
+
+  cmnLinkUserToPatient(linkUserToPatientInput: LinkUserToPatientInput): LinkUserToPatientOutput
+    @function(name: "cmnLinkUserToPatient-${env}")
+  
+  issueCertificate(issueCertificateInput: IssueCertificateInput): CertificateOutput
+    @function(name: "issueCertificate-${env}") 
+
+  getVaccineDetails(userId: String): VaccineDetailsOutput
+    @function(name: "getVaccineDetails-${env}") 
+
+  generateCertificatePassKitIOS(passKitInput: PassKitIOSInput): String
+    @function(name: "generateCertificatePassKitIOS-${env}") 
+}
+
+type IssuerIdentifier
+  @auth(rules: [{allow: public, provider: apiKey}])
+  @model(queries: null, mutations: null, subscriptions: null)
+  @key(name: "byTypeVersion", fields: ["type", "version"]){
+  id: ID!
+  lastIssuerIdentifier: Int
+  type: String
+  version: String
+}

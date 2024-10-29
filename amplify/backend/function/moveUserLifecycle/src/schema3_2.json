@@ -1,0 +1,52 @@
+{
+    "Schema1": null,
+    "Schema2": null,
+    "Schema3": [
+        {
+            "Date": "2020-12-09T16:35:35.0Z",
+            "DoneBy": "Dr Gemma Deakin (GP Surgery) ",
+            "Location": "HSCIC GP Demo 9 (General Practice)",
+            "RecordItems": [
+                {
+                    "Type": "Vaccination",
+                    "Details": "Ambirix 1 1.0ml",
+                    "BinaryDataId": null,
+                    "Url": null
+                },
+                {
+                    "Type": "Vaccination",
+                    "Details": "Fluarix Tetra (GSK) 1 0.5 ml",
+                    "BinaryDataId": null,
+                    "Url": null
+                },
+                {
+                    "Type": "Vaccination",
+                    "Details": "Hepatitis A 1 0.5 ml",
+                    "BinaryDataId": null,
+                    "Url": null
+                },
+                {
+                    "Type": "Vaccination",
+                    "Details": "DTaP/IPV/Hib 1 0.5 ml",
+                    "BinaryDataId": null,
+                    "Url": null
+                },
+                {
+                    "Type": "Coded entry",
+                    "Details": "Adverse reaction to SARS-CoV-2 vaccine (Y29e5)",
+                    "BinaryDataId": null,
+                    "Url": null
+                }
+            ]
+        }
+    ],
+    "RequestId": "3cd26d91-07af-4a96-9221-3249bdfc5385",
+    "PatientId": "da04c045-df1f-4b09-8da9-4144132e1912",
+    "Details": {
+        "surname": "Fortescue",
+        "dateOfBirth": "1965-06-25",
+        "linkageKey": "/Q9pxN/Wr9Da7e8p",
+        "accountID": "200053920",
+        "gpOdsCode": "9HSCIC"
+    }
+}

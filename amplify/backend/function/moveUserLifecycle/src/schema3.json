@@ -1,0 +1,28 @@
+{
+    "Schema1": null,
+    "Schema2": null,
+    "Schema3": [
+        {
+            "Date": "2020-12-09T16:40:57.0Z",
+            "DoneBy": "Dr Gemma Deakin (GP Surgery) ",
+            "Location": "HSCIC GP Demo 9 (General Practice)",
+            "RecordItems": [
+                {
+                    "Type": "Vaccination",
+                    "Details": "COVID-19 mRNA Vac BNT162b2 30mcg/0.3ml conc for susp for inj multidose vials (Pfizer-BioNTech) 1 0.3ml",
+                    "BinaryDataId": null,
+                    "Url": null
+                }
+            ]
+        }
+    ],
+    "RequestId": "f32141f9-5fcc-49de-84d5-89dfb54977ae",
+    "patientId": "bbb1b99c-0ad9-4582-bae5-79abfa295acf",
+    "PatientDetails": {
+        "surname": "Fortescue",
+        "dateOfBirth": "1965-06-25",
+        "linkageKey": "/Q9pxN/Wr9Da7e8p",
+        "accountID": "200053920",
+        "gpOdsCode": "9HSCIC"
+    }
+}

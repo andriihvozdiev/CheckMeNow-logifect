@@ -1,0 +1,175 @@
+type UserDetails
+  @model(subscriptions: null)
+  @versioned
+  @key(name: "byEmail", fields: ["email"], queryField: "userDetailsByEmail")
+  @key(name: "byUserStatus", fields: ["userStatus","statusChangedAt"], queryField: "userDetailsByUserStatus")
+  @auth(rules: [{allow: owner}, {allow: public, provider: apiKey}]) {
+  id: ID!
+  firstName: String
+  lastName: String
+  email: String!
+  dateOfBirth: AWSDateTime
+  vaccinationDate: AWSDateTime
+  vaccinationCenter: String
+  isQrCodeReady: Boolean  
+  patientId: String 
+  herAccessGranted: Boolean
+  vaccineName: String
+  postCode: String
+  typeOfDocument: String
+  nationality: String
+  photoUrl: String
+  userStatus: UserStatus
+  statusChangedAt: Int
+  chatState: String
+  lastChatDate: AWSDateTime
+  pushNotificationToken: String
+  pushNotificationService: String
+  sideEffects: [SideEffect]
+  sideEffectsDialogState : SideEffectDialogState
+  isSideEffectScenarioCompleted : Boolean 
+  linkageKey: String
+  accountID: String
+  gpOdsCode: String
+  isLinkageKeySent: Boolean
+  isTester: Boolean
+}
+
+type SideEffectDialogState {
+  inputText: String
+  intentName: String
+  outputText: String
+  modelField: String
+  action: String
+  restart: Boolean
+  transitions: [Transition]  
+}
+
+type Transition { 
+  input: String
+  next: String
+}
+
+type SideEffect {
+  createdAt: AWSDateTime
+  outputText: String
+  user: String
+} 
+
+type SideEffects
+  @model(subscriptions: null)
+  @versioned
+  @key(name: "byEmail", fields: ["email", "dateTime"], queryField: "sideEffectsByEmail")
+  @auth(rules: [{ allow: private}]) {
+  id: ID!
+  email: String!
+  symptomType: String!
+  dateTime: AWSDateTime!
+  symptomDetails: String
+  degreeType: String
+  degreeTypeDetails: String
+  symptomTime: String
+  symptomProgress: String
+  symptomProgressDetails: String
+  moreDetails: String
+  isCompleted: Boolean
+}
+   
+enum UserStatus {
+  UNVERIFIED
+  NO_NHS_LINKAGE
+  NO_EHR_ACCESS
+  INITIAL
+  SECOND_DOSE
+  AWAITING_VACCINATION
+  FIRST_DOSE_CONFIRMED
+  VACCINATION_CONFIRMED
+  IMMUNITY_CONFIRMED
+}
+
+enum Operation {
+  START
+  CHECK
+}
+
+input TransitionInput {
+  input: String
+  next: String
+}
+
+input ChatNextInput {
+  inputText: String!
+  outputText: String
+  intentName: String
+  transitions: [TransitionInput]
+  action: String
+  modelField: String
+  restart: Boolean 
+}
+
+type TransitionOutput {
+  input: String
+  next: String
+}
+
+type ChatNextOutput {
+  inputText: String
+  outputText: String
+  intentName: String
+  transitions: [TransitionOutput]
+  action: String
+  modelField: String
+  restart: Boolean 
+}
+
+input IdentityCheckInput {
+  operation: Operation
+  firstName: String
+  lastName: String
+  dateOfBirth: String
+  typeOfDocument: String
+  postCode: String
+  jobId: String
+}
+
+type Surgery {
+  Name: String
+  Details: String
+  Link: String
+}
+
+type GPList {
+  StatusCode: Int
+  Result: [Surgery]
+}
+
+input LinkUserToPatientInput {
+  userId: String!
+  linkageKey: String!
+  accountID: String!
+  surname: String!
+  gpOdsCode: String!
+  dateOfBirth: String!
+}
+
+type LinkUserToPatientOutput{
+  statusCode: Int
+  patientId: String
+  herAccessGranted: Boolean,
+  userStatus: String,
+  vaccineName: String,
+  error: String
+}
+
+type Query {
+  checkIdentity(identityCheckInput: IdentityCheckInput): String
+    @function(name: "checkIdentity-${env}")
+
+  gpList(postCode: String): GPList @function(name: "getGPList-${env}")
+
+  chatNext(chatNextInput: ChatNextInput): ChatNextOutput
+    @function(name: "chatNext-${env}")
+
+  cmnLinkUserToPatient(linkUserToPatientInput: LinkUserToPatientInput): LinkUserToPatientOutput
+    @function(name: "cmnLinkUserToPatient-${env}")
+}

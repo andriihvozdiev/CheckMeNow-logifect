@@ -1,0 +1,17 @@
+{
+  "trigger": true,
+  "modules": [
+    "custom"
+  ],
+  "parentResource": "checkmenowAuth",
+  "functionName": "checkmenowAuthPreSignup",
+  "resourceName": "checkmenowAuthPreSignup",
+  "parentStack": "auth",
+  "triggerEnvs": [],
+  "triggerDir": "/Users/victorcrudu/.nvm/versions/node/v14.15.5/lib/node_modules/@aws-amplify/cli/node_modules/amplify-category-auth/provider-utils/awscloudformation/triggers/PreSignup",
+  "triggerTemplate": "PreSignup.json.ejs",
+  "triggerEventPath": "PreSignup.event.json",
+  "roleName": "checkmenowAuthPreSignup",
+  "skipEdit": true,
+  "enableCors": false
+}

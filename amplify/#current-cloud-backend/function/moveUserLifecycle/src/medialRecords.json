@@ -1,0 +1,216 @@
+{
+    "Schema1": {
+        "MedicalRecord": {
+            "PatientGuid": "f3b9631e-ded3-4c8b-89d3-40666845b31e",
+            "Title": "Ms",
+            "Forenames": "Elizabeth",
+            "Surname": "Adams",
+            "Sex": "Female",
+            "DateOfBirth": "1947-02-04T00:00:00",
+            "Allergies": [],
+            "Consultations": [
+                {
+                    "Location": "Main Practice",
+                    "ConsultantName": "TEST, ABCT (Mr)",
+                    "Sections": null,
+                    "EventGuid": "0a1a4a83-942b-451d-8ca9-587c5fc2e05f",
+                    "Term": null,
+                    "AvailabilityDateTime": "2021-02-11T11:09:09.513+00:00",
+                    "EffectiveDate": {
+                        "DatePart": "YearMonthDayTime",
+                        "Value": "2021-02-11T11:08:00+00:00"
+                    },
+                    "CodeId": null,
+                    "AuthorisingUserInRoleGuid": "887678a9-5d14-4a52-b0e0-7bc60e9e8434",
+                    "EnteredByUserInRoleGuid": "887678a9-5d14-4a52-b0e0-7bc60e9e8434"
+                },
+                {
+                    "Location": "Main Practice",
+                    "ConsultantName": "TEST, ABCT (Mr)",
+                    "Sections": null,
+                    "EventGuid": "5726929b-8fe9-4e96-94e2-741a6cc1835c",
+                    "Term": null,
+                    "AvailabilityDateTime": "2021-02-11T11:13:53.56+00:00",
+                    "EffectiveDate": {
+                        "DatePart": "YearMonthDayTime",
+                        "Value": "2021-02-11T11:13:00+00:00"
+                    },
+                    "CodeId": null,
+                    "AuthorisingUserInRoleGuid": "887678a9-5d14-4a52-b0e0-7bc60e9e8434",
+                    "EnteredByUserInRoleGuid": "887678a9-5d14-4a52-b0e0-7bc60e9e8434"
+                }
+            ],
+            "Immunisations": [
+                {
+                    "ObservationType": "Immunisation",
+                    "Episodicity": "None",
+                    "NumericValue": null,
+                    "NumericOperator": null,
+                    "NumericUnits": null,
+                    "DisplayValue": null,
+                    "TextValue": null,
+                    "Range": null,
+                    "Abnormal": false,
+                    "AbnormalReason": null,
+                    "AssociatedText": null,
+                    "EventGuid": "3f04acec-f688-48a2-9fcb-723cdf94133d",
+                    "Term": "2019-nCoV (novel coronavirus) vaccination",
+                    "AvailabilityDateTime": "2021-02-11T11:08:53.423+00:00",
+                    "EffectiveDate": {
+                        "DatePart": "YearMonthDay",
+                        "Value": "2021-02-11T00:00:00+00:00"
+                    },
+                    "CodeId": 12990501000006112,
+                    "AuthorisingUserInRoleGuid": "887678a9-5d14-4a52-b0e0-7bc60e9e8434",
+                    "EnteredByUserInRoleGuid": "887678a9-5d14-4a52-b0e0-7bc60e9e8434"
+                }
+            ],
+            "Medication": [
+                {
+                    "DrugName": "Omeprazole 20mg gastro-resistant capsules",
+                    "Dosage": "TAKE ONE DAILY",
+                    "Quantity": 56.0,
+                    "QuantityUnit": "capsule",
+                    "QuantityRepresentation": "56 CAPSULE",
+                    "IsMixture": false,
+                    "Mixture": null,
+                    "FirstIssueDate": "2003-10-04T00:00:00+00:00",
+                    "LastIssueDate": "2004-02-21T00:00:00+00:00",
+                    "PrescriptionType": "Repeat",
+                    "DrugStatus": "Active",
+                    "EventGuid": "557538f5-7565-4d2e-8d75-61b974b6377e",
+                    "Term": "Omeprazole 20mg gastro-resistant capsules",
+                    "AvailabilityDateTime": "2003-10-04T00:00:00+00:00",
+                    "EffectiveDate": {
+                        "DatePart": "YearMonthDay",
+                        "Value": "2003-10-04T00:00:00+00:00"
+                    },
+                    "CodeId": 1003941000033118,
+                    "AuthorisingUserInRoleGuid": "3125f0c4-c773-48a6-bf33-10a5106f6448",
+                    "EnteredByUserInRoleGuid": "3125f0c4-c773-48a6-bf33-10a5106f6448"
+                },
+                {
+                    "DrugName": "Clopidogrel 75mg tablets",
+                    "Dosage": "OD",
+                    "Quantity": 30.0,
+                    "QuantityUnit": "tablet",
+                    "QuantityRepresentation": "30 tablet",
+                    "IsMixture": false,
+                    "Mixture": null,
+                    "FirstIssueDate": "2005-01-28T00:00:00+00:00",
+                    "LastIssueDate": "2005-01-28T00:00:00+00:00",
+                    "PrescriptionType": "Repeat",
+                    "DrugStatus": "Active",
+                    "EventGuid": "9d3ddf03-9483-414f-8697-a6fe3a15cddb",
+                    "Term": "Clopidogrel 75mg tablets",
+                    "AvailabilityDateTime": "2005-01-28T00:00:00+00:00",
+                    "EffectiveDate": {
+                        "DatePart": "YearMonthDay",
+                        "Value": "2005-01-28T00:00:00+00:00"
+                    },
+                    "CodeId": 1583541000033113,
+                    "AuthorisingUserInRoleGuid": "3125f0c4-c773-48a6-bf33-10a5106f6448",
+                    "EnteredByUserInRoleGuid": "3125f0c4-c773-48a6-bf33-10a5106f6448"
+                },
+                {
+                    "DrugName": "Atorvastatin 40mg tablets",
+                    "Dosage": "ONE AT NIGHT",
+                    "Quantity": 28.0,
+                    "QuantityUnit": "tablet",
+                    "QuantityRepresentation": "28 tablet",
+                    "IsMixture": false,
+                    "Mixture": null,
+                    "FirstIssueDate": "2005-01-28T00:00:00+00:00",
+                    "LastIssueDate": "2005-01-28T00:00:00+00:00",
+                    "PrescriptionType": "Repeat",
+                    "DrugStatus": "Active",
+                    "EventGuid": "f0b0dce2-8775-409c-b50c-9c3585c0ef86",
+                    "Term": "Atorvastatin 40mg tablets",
+                    "AvailabilityDateTime": "2005-01-28T00:00:00+00:00",
+                    "EffectiveDate": {
+                        "DatePart": "YearMonthDay",
+                        "Value": "2005-01-28T00:00:00+00:00"
+                    },
+                    "CodeId": 92141000033110,
+                    "AuthorisingUserInRoleGuid": "3125f0c4-c773-48a6-bf33-10a5106f6448",
+                    "EnteredByUserInRoleGuid": "3125f0c4-c773-48a6-bf33-10a5106f6448"
+                },
+                {
+                    "DrugName": "COVID-19 mRNA Vaccine BNT162b2 30micrograms/0.3ml dose concentrate for suspension for injection multidose vials (Pfizer-BioNTech) (Pfizer-BioNTech)",
+                    "Dosage": "1 dose via intramuscular injection",
+                    "Quantity": 1.0,
+                    "QuantityUnit": "dose",
+                    "QuantityRepresentation": "1 dose",
+                    "IsMixture": false,
+                    "Mixture": null,
+                    "FirstIssueDate": "2021-02-11T10:32:40.45+00:00",
+                    "LastIssueDate": "2021-02-11T10:55:47.837+00:00",
+                    "PrescriptionType": "Acute",
+                    "DrugStatus": "Active",
+                    "EventGuid": "600cc537-f28e-4ad0-847d-07f7ea145f3d",
+                    "Term": "COVID-19 mRNA Vaccine BNT162b2 30micrograms/0.3ml dose concentrate for suspension for injection multidose vials (Pfizer-BioNTech) (Pfizer-BioNTech)",
+                    "AvailabilityDateTime": "2021-02-11T10:32:32.917+00:00",
+                    "EffectiveDate": {
+                        "DatePart": "YearMonthDay",
+                        "Value": "2021-02-11T00:00:00+00:00"
+                    },
+                    "CodeId": 13739541000033114,
+                    "AuthorisingUserInRoleGuid": "887678a9-5d14-4a52-b0e0-7bc60e9e8434",
+                    "EnteredByUserInRoleGuid": "887678a9-5d14-4a52-b0e0-7bc60e9e8434"
+                }
+            ],
+            "Problems": [
+                {
+                    "Status": "Active",
+                    "Significance": "Minor",
+                    "ProblemEndDate": null,
+                    "Observation": {
+                        "ObservationType": "Immunisation",
+                        "Episodicity": "First",
+                        "NumericValue": null,
+                        "NumericOperator": null,
+                        "NumericUnits": null,
+                        "DisplayValue": null,
+                        "TextValue": null,
+                        "Range": null,
+                        "Abnormal": false,
+                        "AbnormalReason": null,
+                        "AssociatedText": null,
+                        "EventGuid": "13e87eb3-6510-4ce0-9864-4d666ec3a8a0",
+                        "Term": "Administration of first dose of SARS-CoV-2 (severe acute respiratory syndrome coronavirus 2) vaccine",
+                        "AvailabilityDateTime": "2021-02-11T11:13:35.413+00:00",
+                        "EffectiveDate": {
+                            "DatePart": "YearMonthDay",
+                            "Value": "2021-02-11T00:00:00+00:00"
+                        },
+                        "CodeId": 13483231000006116,
+                        "AuthorisingUserInRoleGuid": "887678a9-5d14-4a52-b0e0-7bc60e9e8434",
+                        "EnteredByUserInRoleGuid": "887678a9-5d14-4a52-b0e0-7bc60e9e8434"
+                    }
+                }
+            ],
+            "TestResults": [],
+            "Users": [
+                {
+                    "UserInRoleGuid": "3125f0c4-c773-48a6-bf33-10a5106f6448",
+                    "Title": "Dr",
+                    "Forenames": "Brian",
+                    "Surname": "Harding",
+                    "Role": "Locum GP",
+                    "Organisation": "Partner Programme Test 04"
+                },
+                {
+                    "UserInRoleGuid": "887678a9-5d14-4a52-b0e0-7bc60e9e8434",
+                    "Title": "Mr",
+                    "Forenames": "ABCT",
+                    "Surname": "test",
+                    "Role": "General Medical Practitioner",
+                    "Organisation": "Partner Programme Test 04"
+                }
+            ]
+        }
+    },
+    "Schema2": null,
+    "Schema3": null,
+    "RequestId": "9d10fd58-ec9f-4302-8581-97c78a1599b0"
+}

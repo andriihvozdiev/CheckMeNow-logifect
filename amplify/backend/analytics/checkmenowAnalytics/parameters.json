@@ -1,0 +1,21 @@
+{
+    "appName": "checkmenowAnalytics",
+    "roleName": "pinpointLambdaRolee8fa45ca",
+    "cloudformationPolicyName": "cloudformationPolicye8fa45ca",
+    "cloudWatchPolicyName": "cloudWatchPolicye8fa45ca",
+    "pinpointPolicyName": "pinpointPolicye8fa45ca",
+    "authPolicyName": "pinpoint_amplify_e8fa45ca",
+    "unauthPolicyName": "pinpoint_amplify_e8fa45ca",
+    "authRoleName": {
+        "Ref": "AuthRoleName"
+    },
+    "unauthRoleName": {
+        "Ref": "UnauthRoleName"
+    },
+    "authRoleArn": {
+        "Fn::GetAtt": [
+            "AuthRole",
+            "Arn"
+        ]
+    }
+}

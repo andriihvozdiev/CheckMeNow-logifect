@@ -1,0 +1,108 @@
+{
+    "Labels": [
+        {
+            "Name": "Text",
+            "Confidence": 99.93222045898438,
+            "Instances": [],
+            "Parents": []
+        },
+        {
+            "Name": "Document",
+            "Confidence": 98.64104461669922,
+            "Instances": [],
+            "Parents": [
+                {
+                    "Name": "Text"
+                }
+            ]
+        },
+        {
+            "Name": "Driving License",
+            "Confidence": 98.64104461669922,
+            "Instances": [],
+            "Parents": [
+                {
+                    "Name": "Document"
+                },
+                {
+                    "Name": "Text"
+                }
+            ]
+        },
+        {
+            "Name": "License",
+            "Confidence": 98.64104461669922,
+            "Instances": [],
+            "Parents": [
+                {
+                    "Name": "Document"
+                },
+                {
+                    "Name": "Text"
+                }
+            ]
+        },
+        {
+            "Name": "Human",
+            "Confidence": 72.13396453857422,
+            "Instances": [],
+            "Parents": []
+        },
+        {
+            "Name": "Person",
+            "Confidence": 72.13396453857422,
+            "Instances": [
+                {
+                    "BoundingBox": {
+                        "Width": 0.17222534120082855,
+                        "Height": 0.41334640979766846,
+                        "Left": 0.010913358069956303,
+                        "Top": 0.3163071870803833
+                    },
+                    "Confidence": 72.13396453857422
+                }
+            ],
+            "Parents": []
+        },
+        {
+            "Name": "Id Cards",
+            "Confidence": 65.74861145019531,
+            "Instances": [],
+            "Parents": [
+                {
+                    "Name": "Document"
+                },
+                {
+                    "Name": "Text"
+                }
+            ]
+        },
+        {
+            "Name": "Passport",
+            "Confidence": 65.74861145019531,
+            "Instances": [
+                {
+                    "BoundingBox": {
+                        "Width": 0.967279851436615,
+                        "Height": 0.9168294072151184,
+                        "Left": 0.006170335691422224,
+                        "Top": 0.031104356050491333
+                    },
+                    "Confidence": 65.74861145019531
+                }
+            ],
+            "Parents": [
+                {
+                    "Name": "Document"
+                },
+                {
+                    "Name": "Text"
+                },
+                {
+                    "Name": "Id Cards"
+                }
+            ]
+        }
+    ],
+    "LabelModelVersion": "2.0"
+}
