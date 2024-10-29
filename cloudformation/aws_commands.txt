@@ -1,0 +1,4 @@
+--- Query amplify checkIdentity lambda role
+
+aws cloudformation describe-stacks --query 'Stacks[?contains(StackName, `amplify`) ==`true`]|[?contains(StackName, `function`) ==`true`]|[?contains(StackName, `checkmenow`) ==`true`]|[?contains(StackName, `checkIdentity`) ==`true`].[Outputs[?contains(OutputKey, `LambdaExecutionRole`)==`true`]][0][0][0].OutputValue'
+

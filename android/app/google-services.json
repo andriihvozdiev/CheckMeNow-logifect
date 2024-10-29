@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1081662689008",
+    "project_id": "checkmenow-c91ad",
+    "storage_bucket": "checkmenow-c91ad.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1081662689008:android:a6523dc4441e140c21bc35",
+        "android_client_info": {
+          "package_name": "com.logifect.immunitypassport"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1081662689008-8vm06dh3si52sht60mshabu55lelsclh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyByagAKLfTofCzPTPnY5d2l1OLXOxBwpEY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1081662689008-8vm06dh3si52sht60mshabu55lelsclh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

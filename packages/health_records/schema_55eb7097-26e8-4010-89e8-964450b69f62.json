@@ -1,0 +1,364 @@
+{
+    "Schema1": {
+        "MedicalRecord": {
+            "PatientGuid": "8703ae7b-1422-4f5b-a8e1-6cb77d82ec30",
+            "Title": "Mr",
+            "Forenames": "Gary",
+            "Surname": "Dodd",
+            "Sex": "Male",
+            "DateOfBirth": "1952-05-08T00:00:00",
+            "Allergies": [],
+            "Consultations": [],
+            "Immunisations": [],
+            "Medication": [
+                {
+                    "DrugName": "Ventolin 100micrograms/dose Evohaler (GlaxoSmithKline UK Ltd)",
+                    "Dosage": "AS DIRECTED",
+                    "Quantity": 1.0,
+                    "QuantityUnit": "inhaler",
+                    "QuantityRepresentation": "1 INHALER",
+                    "IsMixture": false,
+                    "Mixture": null,
+                    "FirstIssueDate": "2003-02-21T00:00:00+00:00",
+                    "LastIssueDate": "2007-11-23T00:00:00+00:00",
+                    "PrescriptionType": "Repeat",
+                    "DrugStatus": "Active",
+                    "EventGuid": "467c6f8f-a293-4506-a4bf-72acecc2ce6a",
+                    "Term": "Ventolin 100micrograms/dose Evohaler (GlaxoSmithKline UK Ltd)",
+                    "AvailabilityDateTime": "2003-02-21T00:00:00+00:00",
+                    "EffectiveDate": {
+                        "DatePart": "YearMonthDay",
+                        "Value": "2003-02-21T00:00:00+00:00"
+                    },
+                    "CodeId": 1705441000033110,
+                    "AuthorisingUserInRoleGuid": "812af0ad-e71e-41e2-997a-b6787f934928",
+                    "EnteredByUserInRoleGuid": "9f03bef9-80b5-4080-bf73-7c457c96f70f"
+                },
+                {
+                    "DrugName": "Aspirin 75mg dispersible tablets",
+                    "Dosage": "TAKE ONE DAILY",
+                    "Quantity": 28.0,
+                    "QuantityUnit": "tablet(s)",
+                    "QuantityRepresentation": "28 tablet(s)",
+                    "IsMixture": false,
+                    "Mixture": null,
+                    "FirstIssueDate": "2004-01-21T00:00:00+00:00",
+                    "LastIssueDate": "2007-11-23T00:00:00+00:00",
+                    "PrescriptionType": "Repeat",
+                    "DrugStatus": "Active",
+                    "EventGuid": "51a3dd12-b99e-41c1-b063-87c148584a76",
+                    "Term": "Aspirin 75mg dispersible tablets",
+                    "AvailabilityDateTime": "2003-02-21T00:00:00+00:00",
+                    "EffectiveDate": {
+                        "DatePart": "YearMonthDay",
+                        "Value": "2003-02-21T00:00:00+00:00"
+                    },
+                    "CodeId": 82941000033113,
+                    "AuthorisingUserInRoleGuid": "812af0ad-e71e-41e2-997a-b6787f934928",
+                    "EnteredByUserInRoleGuid": "9f03bef9-80b5-4080-bf73-7c457c96f70f"
+                },
+                {
+                    "DrugName": "Lisinopril 20mg tablets",
+                    "Dosage": "TAKE ONE DAILY",
+                    "Quantity": 28.0,
+                    "QuantityUnit": "tablet(s)",
+                    "QuantityRepresentation": "28 tablet(s)",
+                    "IsMixture": false,
+                    "Mixture": null,
+                    "FirstIssueDate": "2004-12-03T00:00:00+00:00",
+                    "LastIssueDate": "2007-11-23T00:00:00+00:00",
+                    "PrescriptionType": "Repeat",
+                    "DrugStatus": "Active",
+                    "EventGuid": "11963497-ba66-41f8-a79b-7634af00a4a9",
+                    "Term": "Lisinopril 20mg tablets",
+                    "AvailabilityDateTime": "2004-11-11T00:00:00+00:00",
+                    "EffectiveDate": {
+                        "DatePart": "YearMonthDay",
+                        "Value": "2004-11-11T00:00:00+00:00"
+                    },
+                    "CodeId": 838041000033116,
+                    "AuthorisingUserInRoleGuid": "812af0ad-e71e-41e2-997a-b6787f934928",
+                    "EnteredByUserInRoleGuid": "9f3c10ea-b781-4e9e-a0fa-af68bcb49cf2"
+                },
+                {
+                    "DrugName": "Advantage Plus testing strips (Roche Diabetes Care Ltd)",
+                    "Dosage": "AS REQ",
+                    "Quantity": 50.0,
+                    "QuantityUnit": "strip",
+                    "QuantityRepresentation": "50 strip",
+                    "IsMixture": false,
+                    "Mixture": null,
+                    "FirstIssueDate": "2005-10-29T00:00:00+00:00",
+                    "LastIssueDate": "2007-08-24T00:00:00+00:00",
+                    "PrescriptionType": "Repeat",
+                    "DrugStatus": "Active",
+                    "EventGuid": "5339c8d7-da33-4cc2-b416-df744a1ececf",
+                    "Term": "Advantage Plus testing strips (Roche Diabetes Care Ltd)",
+                    "AvailabilityDateTime": "2005-10-29T00:00:00+00:00",
+                    "EffectiveDate": {
+                        "DatePart": "YearMonthDay",
+                        "Value": "2005-10-29T00:00:00+00:00"
+                    },
+                    "CodeId": 3853741000033117,
+                    "AuthorisingUserInRoleGuid": "812af0ad-e71e-41e2-997a-b6787f934928",
+                    "EnteredByUserInRoleGuid": "5b6ee87f-38fe-4d44-9317-6551f8e54c86"
+                },
+                {
+                    "DrugName": "Flexitol 25% Urea Heel Balm (Thornton & Ross Ltd)",
+                    "Dosage": "AS DIRECTED",
+                    "Quantity": 56.0,
+                    "QuantityUnit": "gram(s)",
+                    "QuantityRepresentation": "56 gram(s)",
+                    "IsMixture": false,
+                    "Mixture": null,
+                    "FirstIssueDate": "2006-09-01T00:00:00+00:00",
+                    "LastIssueDate": "2007-11-23T00:00:00+00:00",
+                    "PrescriptionType": "Repeat",
+                    "DrugStatus": "Active",
+                    "EventGuid": "10ed3712-073b-44ec-8719-a822cc350ed2",
+                    "Term": "Flexitol 25% Urea Heel Balm (Thornton & Ross Ltd)",
+                    "AvailabilityDateTime": "2006-09-01T00:00:00+00:00",
+                    "EffectiveDate": {
+                        "DatePart": "YearMonthDay",
+                        "Value": "2006-09-01T00:00:00+00:00"
+                    },
+                    "CodeId": 3256941000033115,
+                    "AuthorisingUserInRoleGuid": "812af0ad-e71e-41e2-997a-b6787f934928",
+                    "EnteredByUserInRoleGuid": "9f3c10ea-b781-4e9e-a0fa-af68bcb49cf2"
+                },
+                {
+                    "DrugName": "Sitagliptin 100mg tablets",
+                    "Dosage": "OD",
+                    "Quantity": 28.0,
+                    "QuantityUnit": "tablet",
+                    "QuantityRepresentation": "28 tablet",
+                    "IsMixture": false,
+                    "Mixture": null,
+                    "FirstIssueDate": "2006-11-22T00:00:00+00:00",
+                    "LastIssueDate": "2007-11-23T00:00:00+00:00",
+                    "PrescriptionType": "Repeat",
+                    "DrugStatus": "Active",
+                    "EventGuid": "34119328-9232-4c58-a539-5d51685de023",
+                    "Term": "Sitagliptin 100mg tablets",
+                    "AvailabilityDateTime": "2006-11-07T00:00:00+00:00",
+                    "EffectiveDate": {
+                        "DatePart": "YearMonthDay",
+                        "Value": "2006-11-07T00:00:00+00:00"
+                    },
+                    "CodeId": 4133241000033117,
+                    "AuthorisingUserInRoleGuid": "812af0ad-e71e-41e2-997a-b6787f934928",
+                    "EnteredByUserInRoleGuid": "3125f0c4-c773-48a6-bf33-10a5106f6448"
+                },
+                {
+                    "DrugName": "Metformin 500mg tablets",
+                    "Dosage": "TAKE TWO TABLETS TWICE A DAY",
+                    "Quantity": 112.0,
+                    "QuantityUnit": "tablet",
+                    "QuantityRepresentation": "112 tablet",
+                    "IsMixture": false,
+                    "Mixture": null,
+                    "FirstIssueDate": "2007-04-21T00:00:00+00:00",
+                    "LastIssueDate": "2007-11-23T00:00:00+00:00",
+                    "PrescriptionType": "Repeat",
+                    "DrugStatus": "Active",
+                    "EventGuid": "a8a2f734-cb07-40b6-be04-f4b1d394fa26",
+                    "Term": "Metformin 500mg tablets",
+                    "AvailabilityDateTime": "2007-04-17T00:00:00+00:00",
+                    "EffectiveDate": {
+                        "DatePart": "YearMonthDay",
+                        "Value": "2007-04-17T00:00:00+00:00"
+                    },
+                    "CodeId": 896941000033112,
+                    "AuthorisingUserInRoleGuid": "812af0ad-e71e-41e2-997a-b6787f934928",
+                    "EnteredByUserInRoleGuid": "3125f0c4-c773-48a6-bf33-10a5106f6448"
+                },
+                {
+                    "DrugName": "Atorvastatin 40mg tablets",
+                    "Dosage": "OD",
+                    "Quantity": 28.0,
+                    "QuantityUnit": "tablet",
+                    "QuantityRepresentation": "28 tablet",
+                    "IsMixture": false,
+                    "Mixture": null,
+                    "FirstIssueDate": "2007-05-11T00:00:00+00:00",
+                    "LastIssueDate": "2007-11-23T00:00:00+00:00",
+                    "PrescriptionType": "Repeat",
+                    "DrugStatus": "Active",
+                    "EventGuid": "b5072bf5-e560-4b84-b897-26e45360efb1",
+                    "Term": "Atorvastatin 40mg tablets",
+                    "AvailabilityDateTime": "2007-05-01T00:00:00+00:00",
+                    "EffectiveDate": {
+                        "DatePart": "YearMonthDay",
+                        "Value": "2007-05-01T00:00:00+00:00"
+                    },
+                    "CodeId": 92141000033110,
+                    "AuthorisingUserInRoleGuid": "812af0ad-e71e-41e2-997a-b6787f934928",
+                    "EnteredByUserInRoleGuid": "3125f0c4-c773-48a6-bf33-10a5106f6448"
+                },
+                {
+                    "DrugName": "Ezetimibe 10mg tablets",
+                    "Dosage": "OD",
+                    "Quantity": 28.0,
+                    "QuantityUnit": "tablet(s)",
+                    "QuantityRepresentation": "28 tablet(s)",
+                    "IsMixture": false,
+                    "Mixture": null,
+                    "FirstIssueDate": "2007-05-11T00:00:00+00:00",
+                    "LastIssueDate": "2007-11-23T00:00:00+00:00",
+                    "PrescriptionType": "Repeat",
+                    "DrugStatus": "Active",
+                    "EventGuid": "643ed6bd-8c1b-4574-b4b6-bde2ae28e233",
+                    "Term": "Ezetimibe 10mg tablets",
+                    "AvailabilityDateTime": "2007-05-01T00:00:00+00:00",
+                    "EffectiveDate": {
+                        "DatePart": "YearMonthDay",
+                        "Value": "2007-05-01T00:00:00+00:00"
+                    },
+                    "CodeId": 2906741000033119,
+                    "AuthorisingUserInRoleGuid": "812af0ad-e71e-41e2-997a-b6787f934928",
+                    "EnteredByUserInRoleGuid": "3125f0c4-c773-48a6-bf33-10a5106f6448"
+                },
+                {
+                    "DrugName": "Gliclazide 80mg tablets",
+                    "Dosage": "1/2 TABLET BD",
+                    "Quantity": 28.0,
+                    "QuantityUnit": "tablet",
+                    "QuantityRepresentation": "28 tablet",
+                    "IsMixture": false,
+                    "Mixture": null,
+                    "FirstIssueDate": "2007-05-11T00:00:00+00:00",
+                    "LastIssueDate": "2007-11-23T00:00:00+00:00",
+                    "PrescriptionType": "Repeat",
+                    "DrugStatus": "Active",
+                    "EventGuid": "1e3a94b9-1b66-4ada-b8d3-95e13f61da1a",
+                    "Term": "Gliclazide 80mg tablets",
+                    "AvailabilityDateTime": "2007-05-01T00:00:00+00:00",
+                    "EffectiveDate": {
+                        "DatePart": "YearMonthDay",
+                        "Value": "2007-05-01T00:00:00+00:00"
+                    },
+                    "CodeId": 646441000033117,
+                    "AuthorisingUserInRoleGuid": "812af0ad-e71e-41e2-997a-b6787f934928",
+                    "EnteredByUserInRoleGuid": "3125f0c4-c773-48a6-bf33-10a5106f6448"
+                },
+                {
+                    "DrugName": "Seretide 125 Evohaler (GlaxoSmithKline UK Ltd)",
+                    "Dosage": "2 PUFFS BD",
+                    "Quantity": 2.0,
+                    "QuantityUnit": "inhaler",
+                    "QuantityRepresentation": "2 inhaler",
+                    "IsMixture": false,
+                    "Mixture": null,
+                    "FirstIssueDate": "2007-07-27T00:00:00+00:00",
+                    "LastIssueDate": "2007-11-23T00:00:00+00:00",
+                    "PrescriptionType": "Repeat",
+                    "DrugStatus": "Active",
+                    "EventGuid": "bd3f2e4c-a441-49d8-b774-61a815ed05eb",
+                    "Term": "Seretide 125 Evohaler (GlaxoSmithKline UK Ltd)",
+                    "AvailabilityDateTime": "2007-07-27T00:00:00+00:00",
+                    "EffectiveDate": {
+                        "DatePart": "YearMonthDay",
+                        "Value": "2007-07-27T00:00:00+00:00"
+                    },
+                    "CodeId": 2147341000033110,
+                    "AuthorisingUserInRoleGuid": "812af0ad-e71e-41e2-997a-b6787f934928",
+                    "EnteredByUserInRoleGuid": "812af0ad-e71e-41e2-997a-b6787f934928"
+                },
+                {
+                    "DrugName": "COVID-19 mRNA Vaccine BNT162b2 30micrograms/0.3ml dose concentrate for suspension for injection multidose vials (Pfizer-BioNTech) (Pfizer-BioNTech)",
+                    "Dosage": "1 dose via intramuscular injection",
+                    "Quantity": 1.0,
+                    "QuantityUnit": "dose",
+                    "QuantityRepresentation": "1 dose",
+                    "IsMixture": false,
+                    "Mixture": null,
+                    "FirstIssueDate": "2021-02-11T10:32:40.45+00:00",
+                    "LastIssueDate": "2021-02-11T10:55:47.837+00:00",
+                    "PrescriptionType": "Acute",
+                    "DrugStatus": "Active",
+                    "EventGuid": "600cc537-f28e-4ad0-847d-07f7ea145f3d",
+                    "Term": "COVID-19 mRNA Vaccine BNT162b2 30micrograms/0.3ml dose concentrate for suspension for injection multidose vials (Pfizer-BioNTech) (Pfizer-BioNTech)",
+                    "AvailabilityDateTime": "2021-02-11T10:32:32.917+00:00",
+                    "EffectiveDate": {
+                        "DatePart": "YearMonthDay",
+                        "Value": "2021-02-11T00:00:00+00:00"
+                    },
+                    "CodeId": 13739541000033114,
+                    "AuthorisingUserInRoleGuid": "887678a9-5d14-4a52-b0e0-7bc60e9e8434",
+                    "EnteredByUserInRoleGuid": "887678a9-5d14-4a52-b0e0-7bc60e9e8434"
+                },
+                {
+                    "DrugName": "COVID-19 mRNA Vaccine BNT162b2 30micrograms/0.3ml dose concentrate for suspension for injection multidose vials (Pfizer-BioNTech) (Pfizer-BioNTech)",
+                    "Dosage": "1 dose via intramuscular injection",
+                    "Quantity": 1.0,
+                    "QuantityUnit": "dose",
+                    "QuantityRepresentation": "1 dose",
+                    "IsMixture": false,
+                    "Mixture": null,
+                    "FirstIssueDate": "2021-03-29T10:32:40.45+00:00",
+                    "LastIssueDate": "2021-03-29T10:55:47.837+00:00",
+                    "PrescriptionType": "Acute",
+                    "DrugStatus": "Active",
+                    "EventGuid": "600cc537-f28e-4ad0-847d-07f7ea145f3d",
+                    "Term": "COVID-19 mRNA Vaccine BNT162b2 30micrograms/0.3ml dose concentrate for suspension for injection multidose vials (Pfizer-BioNTech) (Pfizer-BioNTech)",
+                    "AvailabilityDateTime": "2021-03-10T10:32:32.917+00:00",
+                    "EffectiveDate": {
+                        "DatePart": "YearMonthDay",
+                        "Value": "2021-03-10T00:00:00+00:00"
+                    },
+                    "CodeId": 13739541000033114,
+                    "AuthorisingUserInRoleGuid": "887678a9-5d14-4a52-b0e0-7bc60e9e8434",
+                    "EnteredByUserInRoleGuid": "887678a9-5d14-4a52-b0e0-7bc60e9e8434"
+                }
+            ],
+            "Problems": [],
+            "TestResults": [],
+            "Users": [
+                {
+                    "UserInRoleGuid": "812af0ad-e71e-41e2-997a-b6787f934928",
+                    "Title": "Dr",
+                    "Forenames": "Neil",
+                    "Surname": "Burgess",
+                    "Role": "General Medical Practitioner",
+                    "Organisation": "Partner Programme Test 04"
+                },
+                {
+                    "UserInRoleGuid": "5b6ee87f-38fe-4d44-9317-6551f8e54c86",
+                    "Title": "Mrs",
+                    "Forenames": "Carol",
+                    "Surname": "Howard",
+                    "Role": "Appointments Clerk",
+                    "Organisation": "Partner Programme Test 04"
+                },
+                {
+                    "UserInRoleGuid": "3125f0c4-c773-48a6-bf33-10a5106f6448",
+                    "Title": "Dr",
+                    "Forenames": "Brian",
+                    "Surname": "Harding",
+                    "Role": "Locum GP",
+                    "Organisation": "Partner Programme Test 04"
+                },
+                {
+                    "UserInRoleGuid": "9f3c10ea-b781-4e9e-a0fa-af68bcb49cf2",
+                    "Title": "Mrs",
+                    "Forenames": "Jean",
+                    "Surname": "Mitchell",
+                    "Role": "Community Practitioner",
+                    "Organisation": "Partner Programme Test 04"
+                },
+                {
+                    "UserInRoleGuid": "9f03bef9-80b5-4080-bf73-7c457c96f70f",
+                    "Title": "Mrs",
+                    "Forenames": "Ann",
+                    "Surname": "Stanley",
+                    "Role": "Appointments Clerk",
+                    "Organisation": "Partner Programme Test 04"
+                }
+            ]
+        }
+    },
+    "Schema2": null,
+    "Schema3": null,
+    "RequestId": "56b82eeb-6731-4d71-9544-25000d001b31",
+    "patientId": "55eb7097-26e8-4010-89e8-964450b69f62"
+}

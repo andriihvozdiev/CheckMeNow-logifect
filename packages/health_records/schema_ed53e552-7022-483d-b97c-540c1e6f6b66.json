@@ -1,0 +1,70 @@
+{
+    "Schema1": null,
+    "Schema2": null,
+    "Schema3": [
+        {
+            "Date": "2020-12-09T16:26:45.0Z",
+            "DoneBy": "Dr Gemma Deakin (GP Surgery) ",
+            "Location": "HSCIC GP Demo 9 (General Practice)",
+            "RecordItems": [
+                {
+                    "Type": "Drug sensitivity",
+                    "Details": "Sensitivity: ADVOCATE",
+                    "BinaryDataId": null,
+                    "Url": null
+                },
+                {
+                    "Type": "Medication template",
+                    "Details": "Aspirin 75mg dispersible tablets - 28 tablet - take one daily",
+                    "BinaryDataId": null,
+                    "Url": null
+                },
+                {
+                    "Type": "Medication template",
+                    "Details": "Clenil Modulite 50micrograms/dose inhaler (Chiesi Ltd) - 200 dose - two puffs twice daily",
+                    "BinaryDataId": null,
+                    "Url": null
+                },
+                {
+                    "Type": "Medication",
+                    "Details": "(R) Aspirin 75mg dispersible tablets - 28 tablet - take one daily",
+                    "BinaryDataId": null,
+                    "Url": null
+                },
+                {
+                    "Type": "Medication",
+                    "Details": "(R) Clenil Modulite 50micrograms/dose inhaler (Chiesi Ltd) - 200 dose - two puffs twice daily",
+                    "BinaryDataId": null,
+                    "Url": null
+                },
+                {
+                    "Type": "Coded entry",
+                    "Details": "Carboxyhaemoglobin level (42Y0.) 1 %",
+                    "BinaryDataId": null,
+                    "Url": null
+                },
+                {
+                    "Type": "Coded entry",
+                    "Details": "Troponin (Xa9wW) 3 ug/L",
+                    "BinaryDataId": null,
+                    "Url": null
+                },
+                {
+                    "Type": "Coded entry",
+                    "Details": "Serum urate level (XM0ls) 20 mmol/L",
+                    "BinaryDataId": null,
+                    "Url": "https://labtestsonline.org.uk/tests/URIC-ACID-TEST"
+                }
+            ]
+        }
+    ],
+    "RequestId": "f32141f9-5fcc-49de-84d5-89dfb54977ae",
+    "patientId": "ed53e552-7022-483d-b97c-540c1e6f6b66",
+    "PatientDetails": {
+        "surname": "Gower",
+        "dateOfBirth": "2000-12-09",
+        "linkageKey": "3q!bV7uJEsv87xX%",
+        "accountID": "739005619",
+        "gpOdsCode": "9HSCIC"
+    }
+}

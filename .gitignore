@@ -1,0 +1,6 @@
+amplify/#current-cloud-backend/api/checkmenowApi/build
+amplify/backend/api/checkmenowApi/build
+android/.gradle
+android/.idea
+android/app/build
+ios/Pods

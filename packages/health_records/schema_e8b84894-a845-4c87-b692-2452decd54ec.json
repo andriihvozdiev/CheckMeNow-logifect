@@ -1,0 +1,203 @@
+{
+    "Schema1": {
+        "MedicalRecord": {
+            "PatientGuid": "5d3ab77a-636d-49aa-9c20-5008201229e0",
+            "Title": "Mrs",
+            "Forenames": "Angela",
+            "Surname": "Ahmed",
+            "Sex": "Female",
+            "DateOfBirth": "1950-01-13T00:00:00",
+            "Allergies": [],
+            "Consultations": [],
+            "Immunisations": [],
+            "Medication": [
+                {
+                    "DrugName": "Bendroflumethiazide 2.5mg tablets",
+                    "Dosage": "TAKE ONE DAILY",
+                    "Quantity": 28.0,
+                    "QuantityUnit": "tablet(s)",
+                    "QuantityRepresentation": "28 tablet(s)",
+                    "IsMixture": false,
+                    "Mixture": null,
+                    "FirstIssueDate": "2006-06-26T00:00:00+00:00",
+                    "LastIssueDate": "2008-08-05T00:00:00+00:00",
+                    "PrescriptionType": "Repeat",
+                    "DrugStatus": "Active",
+                    "EventGuid": "321bb53c-c26d-457c-b010-615f4fe49834",
+                    "Term": "Bendroflumethiazide 2.5mg tablets",
+                    "AvailabilityDateTime": "2006-06-26T00:00:00+00:00",
+                    "EffectiveDate": {
+                        "DatePart": "YearMonthDay",
+                        "Value": "2006-06-26T00:00:00+00:00"
+                    },
+                    "CodeId": 3083141000033112,
+                    "AuthorisingUserInRoleGuid": "3125f0c4-c773-48a6-bf33-10a5106f6448",
+                    "EnteredByUserInRoleGuid": "9f3c10ea-b781-4e9e-a0fa-af68bcb49cf2"
+                },
+                {
+                    "DrugName": "Freestyle testing strips (Abbott Laboratories Ltd)",
+                    "Dosage": "AS REQUIRED",
+                    "Quantity": 50.0,
+                    "QuantityUnit": "strip",
+                    "QuantityRepresentation": "50 strip",
+                    "IsMixture": false,
+                    "Mixture": null,
+                    "FirstIssueDate": "2006-11-17T00:00:00+00:00",
+                    "LastIssueDate": "2008-05-03T00:00:00+00:00",
+                    "PrescriptionType": "Repeat",
+                    "DrugStatus": "Active",
+                    "EventGuid": "a59c67ed-b668-4934-b141-890ef94faca7",
+                    "Term": "Freestyle testing strips (Abbott Laboratories Ltd)",
+                    "AvailabilityDateTime": "2006-11-17T00:00:00+00:00",
+                    "EffectiveDate": {
+                        "DatePart": "YearMonthDay",
+                        "Value": "2006-11-17T00:00:00+00:00"
+                    },
+                    "CodeId": 2770441000033112,
+                    "AuthorisingUserInRoleGuid": "3125f0c4-c773-48a6-bf33-10a5106f6448",
+                    "EnteredByUserInRoleGuid": "9f3c10ea-b781-4e9e-a0fa-af68bcb49cf2"
+                },
+                {
+                    "DrugName": "Simvastatin 40mg tablets",
+                    "Dosage": "ONE TAB TO BE TAKEN AT NIGHT",
+                    "Quantity": 28.0,
+                    "QuantityUnit": "",
+                    "QuantityRepresentation": "28 TABLET",
+                    "IsMixture": false,
+                    "Mixture": null,
+                    "FirstIssueDate": "2007-07-09T00:00:00+00:00",
+                    "LastIssueDate": "2008-07-08T00:00:00+00:00",
+                    "PrescriptionType": "Repeat",
+                    "DrugStatus": "Active",
+                    "EventGuid": "acaee84f-8029-4ee8-8f53-2e6928051250",
+                    "Term": "Simvastatin 40mg tablets",
+                    "AvailabilityDateTime": "2007-07-01T00:00:00+00:00",
+                    "EffectiveDate": {
+                        "DatePart": "YearMonthDay",
+                        "Value": "2007-06-03T00:00:00+00:00"
+                    },
+                    "CodeId": 1337541000033111,
+                    "AuthorisingUserInRoleGuid": "3125f0c4-c773-48a6-bf33-10a5106f6448",
+                    "EnteredByUserInRoleGuid": "3df6ef93-4972-434e-b989-0835f9b36d42"
+                },
+                {
+                    "DrugName": "Metformin 500mg tablets",
+                    "Dosage": "TAKE ONE TWICE DAILY",
+                    "Quantity": 56.0,
+                    "QuantityUnit": "tablet",
+                    "QuantityRepresentation": "56 TABLET",
+                    "IsMixture": false,
+                    "Mixture": null,
+                    "FirstIssueDate": "2007-10-12T00:00:00+00:00",
+                    "LastIssueDate": "2008-08-05T00:00:00+00:00",
+                    "PrescriptionType": "Repeat",
+                    "DrugStatus": "Active",
+                    "EventGuid": "826b888b-4057-4c66-9599-5c518b05321c",
+                    "Term": "Metformin 500mg tablets",
+                    "AvailabilityDateTime": "2007-10-12T00:00:00+00:00",
+                    "EffectiveDate": {
+                        "DatePart": "YearMonthDay",
+                        "Value": "2007-10-12T00:00:00+00:00"
+                    },
+                    "CodeId": 896941000033112,
+                    "AuthorisingUserInRoleGuid": "3125f0c4-c773-48a6-bf33-10a5106f6448",
+                    "EnteredByUserInRoleGuid": "0bc11b71-591b-4180-9139-67490c77c2ac"
+                },
+                {
+                    "DrugName": "Talent 0.5ml dose solution for injection multidose vials (Secretary of State for Health)",
+                    "Dosage": "1 dose via intramuscular injection",
+                    "Quantity": 1.0,
+                    "QuantityUnit": "dose",
+                    "QuantityRepresentation": "1 dose",
+                    "IsMixture": false,
+                    "Mixture": null,
+                    "FirstIssueDate": "2021-03-11T11:33:34.493+00:00",
+                    "LastIssueDate": "2021-03-11T11:33:34.493+00:00",
+                    "PrescriptionType": "Acute",
+                    "DrugStatus": "Active",
+                    "EventGuid": "0afdfcbe-b42d-427e-8cd8-507972563b0b",
+                    "Term": "Talent 0.5ml dose solution for injection multidose vials (Secretary of State for Health)",
+                    "AvailabilityDateTime": "2021-03-11T11:33:27.85+00:00",
+                    "EffectiveDate": {
+                        "DatePart": "YearMonthDay",
+                        "Value": "2021-03-11T00:00:00+00:00"
+                    },
+                    "CodeId": 13739441000033113,
+                    "AuthorisingUserInRoleGuid": "887678a9-5d14-4a52-b0e0-7bc60e9e8434",
+                    "EnteredByUserInRoleGuid": "887678a9-5d14-4a52-b0e0-7bc60e9e8434"
+                },
+                {
+                    "DrugName": "COVID-19 mRNA Vaccine BNT162b2 30micrograms/0.3ml dose concentrate for suspension for injection multidose vials (Pfizer-BioNTech) (Pfizer-BioNTech)",
+                    "Dosage": "1 dose via intramuscular injection",
+                    "Quantity": 1.0,
+                    "QuantityUnit": "dose",
+                    "QuantityRepresentation": "1 dose",
+                    "IsMixture": false,
+                    "Mixture": null,
+                    "FirstIssueDate": "2021-03-11T10:32:40.45+00:00",
+                    "LastIssueDate": "2021-03-11T10:55:47.837+00:00",
+                    "PrescriptionType": "Acute",
+                    "DrugStatus": "Active",
+                    "EventGuid": "600cc537-f28e-4ad0-847d-07f7ea145f3d",
+                    "Term": "COVID-19 mRNA Vaccine BNT162b2 30micrograms/0.3ml dose concentrate for suspension for injection multidose vials (Pfizer-BioNTech) (Pfizer-BioNTech)",
+                    "AvailabilityDateTime": "2021-03-11T10:32:32.917+00:00",
+                    "EffectiveDate": {
+                        "DatePart": "YearMonthDay",
+                        "Value": "2021-03-11T00:00:00+00:00"
+                    },
+                    "CodeId": 13739541000033114,
+                    "AuthorisingUserInRoleGuid": "887678a9-5d14-4a52-b0e0-7bc60e9e8434",
+                    "EnteredByUserInRoleGuid": "887678a9-5d14-4a52-b0e0-7bc60e9e8434"
+                }
+            ],
+            "Problems": [],
+            "TestResults": [],
+            "Users": [
+                {
+                    "UserInRoleGuid": "0bc11b71-591b-4180-9139-67490c77c2ac",
+                    "Title": "Miss",
+                    "Forenames": "Karen",
+                    "Surname": "Chadwick",
+                    "Role": "Appointments Clerk",
+                    "Organisation": "Partner Programme Test 04"
+                },
+                {
+                    "UserInRoleGuid": "3125f0c4-c773-48a6-bf33-10a5106f6448",
+                    "Title": "Dr",
+                    "Forenames": "Brian",
+                    "Surname": "Harding",
+                    "Role": "Locum GP",
+                    "Organisation": "Partner Programme Test 04"
+                },
+                {
+                    "UserInRoleGuid": "9f3c10ea-b781-4e9e-a0fa-af68bcb49cf2",
+                    "Title": "Mrs",
+                    "Forenames": "Jean",
+                    "Surname": "Mitchell",
+                    "Role": "Community Practitioner",
+                    "Organisation": "Partner Programme Test 04"
+                },
+                {
+                    "UserInRoleGuid": "3df6ef93-4972-434e-b989-0835f9b36d42",
+                    "Title": "Mrs",
+                    "Forenames": "Janet",
+                    "Surname": "Norman",
+                    "Role": "Health Care Support Worker",
+                    "Organisation": "Partner Programme Test 04"
+                },
+                {
+                    "UserInRoleGuid": "887678a9-5d14-4a52-b0e0-7bc60e9e8434",
+                    "Title": "Mr",
+                    "Forenames": "ABCT",
+                    "Surname": "test",
+                    "Role": "General Medical Practitioner",
+                    "Organisation": "Partner Programme Test 04"
+                }
+            ]
+        }
+    },
+    "Schema2": null,
+    "Schema3": null,
+    "RequestId": "56b82eeb-6731-4d71-9544-25000d001b31",
+    "patientId": "e8b84894-a845-4c87-b692-2452decd54ec"
+}

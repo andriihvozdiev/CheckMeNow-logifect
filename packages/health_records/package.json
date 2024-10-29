@@ -1,0 +1,9 @@
+{
+  "name": "health-records",
+  "version": "1.0.4",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "moment": "^2.29.1"
+  }
+}

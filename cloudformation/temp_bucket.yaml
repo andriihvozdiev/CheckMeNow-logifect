@@ -1,0 +1,14 @@
+Parameters:
+  LambdaRole:
+    Type: String
+    
+Resources:
+  S3TempBucket:
+    Type: 'AWS::S3::Bucket'
+    BucketName: 'checkmenowtemp'
+  
+  S3TempBucketPolicy:
+    Type: 'AWS::S3::BucketPolicy'
+    Properties:
+      Bucket: !GetAtt S3TempBucket.BucketName
+      

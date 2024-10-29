@@ -1,0 +1,65 @@
+{
+    "Schema1": null,
+    "Schema2": null,
+    "Schema3": [
+        {
+            "Date": "2021-03-29T15:44:42.0Z",
+            "DoneBy": "Dr Gemma Deakin (GP Surgery) ",
+            "Location": "HSCIC GP Demo 9 (General Practice)",
+            "RecordItems": [
+                {
+                    "Type": "Vaccination",
+                    "Details": "COVID-19 Vac AstraZeneca (ChAdOx1 S recomb) 5x10000000000 viral particles/0.5ml dose sol for inj MDV 1 0.5ml",
+                    "BinaryDataId": null,
+                    "Url": null
+                }
+            ]
+        },
+        {
+            "Date": "2020-12-09T16:35:35.0Z",
+            "DoneBy": "Dr Gemma Deakin (GP Surgery) ",
+            "Location": "HSCIC GP Demo 9 (General Practice)",
+            "RecordItems": [
+                {
+                    "Type": "Vaccination",
+                    "Details": "Ambirix 1 1.0ml",
+                    "BinaryDataId": null,
+                    "Url": null
+                },
+                {
+                    "Type": "Vaccination",
+                    "Details": "Fluarix Tetra (GSK) 1 0.5 ml",
+                    "BinaryDataId": null,
+                    "Url": null
+                },
+                {
+                    "Type": "Vaccination",
+                    "Details": "Hepatitis A 1 0.5 ml",
+                    "BinaryDataId": null,
+                    "Url": null
+                },
+                {
+                    "Type": "Vaccination",
+                    "Details": "DTaP/IPV/Hib 1 0.5 ml",
+                    "BinaryDataId": null,
+                    "Url": null
+                },
+                {
+                    "Type": "Coded entry",
+                    "Details": "Adverse reaction to SARS-CoV-2 vaccine (Y29e5)",
+                    "BinaryDataId": null,
+                    "Url": null
+                }
+            ]
+        }
+    ],
+    "RequestId": "f32141f9-5fcc-49de-84d5-89dfb54977ae",
+    "patientId": "da04c045-df1f-4b09-8da9-4144132e1912",
+    "PatientDetails": {
+        "surname": "Fortescue",
+        "dateOfBirth": "1965-06-25",
+        "linkageKey": "/Q9pxN/Wr9Da7e8p",
+        "accountID": "200053920",
+        "gpOdsCode": "9HSCIC"
+    }
+}

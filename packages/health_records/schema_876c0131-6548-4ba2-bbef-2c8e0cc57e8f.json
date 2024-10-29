@@ -1,0 +1,78 @@
+{
+    "Schema1": null,
+    "Schema2": null,
+    "Schema3": [
+        {
+            "Date": "2021-02-05T15:52:02.0Z",
+            "DoneBy": "Dr Gemma Deakin (GP Surgery) ",
+            "Location": "HSCIC GP Demo 9 (General Practice)",
+            "RecordItems": [
+                {
+                    "Type": "Vaccination",
+                    "Details": "COVID-19 Vac AstraZeneca (ChAdOx1 S recomb) 5x10000000000 viral particles/0.5ml dose sol for inj MDV 2 0.5ml",
+                    "BinaryDataId": null,
+                    "Url": null
+                }
+            ]
+        },
+        {
+            "Date": "2021-03-22T15:52:02.0Z",
+            "DoneBy": "Dr Gemma Deakin (GP Surgery) ",
+            "Location": "HSCIC GP Demo 9 (General Practice)",
+            "RecordItems": [
+                {
+                    "Type": "Vaccination",
+                    "Details": "COVID-19 Vac AstraZeneca (ChAdOx1 S recomb) 5x10000000000 viral particles/0.5ml dose sol for inj MDV 2 0.5ml",
+                    "BinaryDataId": null,
+                    "Url": null
+                }
+            ]
+        },
+        {
+            "Date": "2006-06-04T16:14:53.0Z",
+            "DoneBy": "Dr Gemma Deakin (GP Surgery) ",
+            "Location": "HSCIC GP Demo 9 (General Practice)",
+            "RecordItems": [
+                {
+                    "Type": "Vaccination",
+                    "Details": "Chicken pox 1 0.5 ml",
+                    "BinaryDataId": null,
+                    "Url": null
+                },
+                {
+                    "Type": "Medication",
+                    "Details": "Varicella vaccine (live) powder and solvent for solution for injection 0.5ml vials - 0.5 ml -  (Future dated medication 09 Dec 2020)",
+                    "BinaryDataId": null,
+                    "Url": null
+                },
+                {
+                    "Type": "Coded entry",
+                    "Details": "Serum vitamin B12 level (XE2pf) 5 ng/L",
+                    "BinaryDataId": null,
+                    "Url": "https://labtestsonline.org.uk/tests/VITAMIN-B12-AND-FOLATE"
+                },
+                {
+                    "Type": "Coded entry",
+                    "Details": "Serum ferritin level (XE24r) 20 ng/ml",
+                    "BinaryDataId": null,
+                    "Url": "https://labtestsonline.org.uk/tests/FERRITIN-TEST"
+                },
+                {
+                    "Type": "Coded entry",
+                    "Details": "Serum folate level (42U5.) 2 ng/ml",
+                    "BinaryDataId": null,
+                    "Url": "https://labtestsonline.org.uk/tests/VITAMIN-B12-AND-FOLATE"
+                }
+            ]
+        }
+    ],
+    "RequestId": "f32141f9-5fcc-49de-84d5-89dfb54977ae",
+    "patientId": "876c0131-6548-4ba2-bbef-2c8e0cc57e8f",
+    "PatientDetails": {
+        "surname": "Lawman",
+        "dateOfBirth": "1939-01-09",
+        "linkageKey": "85**hXchN2f8CwuS",
+        "accountID": "985438334",
+        "gpOdsCode": "9HSCIC"
+    }
+}
